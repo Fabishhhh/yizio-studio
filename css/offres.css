@@ -1,0 +1,370 @@
+:root {
+  --bg: #0b0b0c;
+  --card: #111113;
+  --accent: #f5b942;
+  --accent-dark: #d99a2b;
+  --text: #ffffff;
+  --text-muted: #a0a0a0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
+  background: #050505;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* =========================
+   GRID BACKGROUND
+========================= */
+
+.grid-bg {
+  position: fixed;
+  inset: 0;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+  z-index: -2;
+}
+
+.projects-hero .glow {
+  position: absolute;
+  top: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 170, 0, 0.35) 0%,
+    rgba(255, 170, 0, 0) 70%
+  );
+  filter: blur(120px);
+  z-index: -1;
+}
+
+.projects-hero {
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 160px 20px 100px 20px;
+  overflow: visible;
+  min-height: 100vh;
+}
+
+.navbar nav a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #ffaa00;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  font-size: 13px;
+  margin-bottom: 25px;
+  color: #aaa;
+}
+
+section {
+  padding: 100px 8%;
+}
+
+h1, h2, h3 {
+  font-family: "Playfair Display", serif;
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.accent {
+  color: #ffaa00;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+p {
+  color: var(--text-muted);
+}
+
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px;
+}
+
+.btn-primary {
+  background: #ffaa00;
+  color: black;
+}
+
+.btn-primary:hover {
+  background: var(--accent-dark);
+}
+
+.btn-outline {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: var(--accent);
+  color: black;
+}
+
+.pricing {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: var(--card);
+  padding: 40px;
+  border-radius: 20px;
+  width: 320px;
+  position: relative;
+  transition: 0.4s;
+  border: 1px solid transparent;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border: 1px solid var(--accent);
+}
+
+.card-badge {
+  position: absolute;
+  top: -15px;
+  right: 20px;
+  background: var(--accent);
+  color: black;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 28px;
+  margin: 20px 0;
+  color: var(--accent);
+}
+
+.card ul {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.card ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* =========================
+   MAINTENANCE SECTION (NEW)
+========================= */
+
+.maintenance-container {
+  max-width: 1020px;
+  margin: 60px auto 0;
+  text-align: center;
+}
+
+.maintenance-banner {
+  background: var(--card);
+  border: 1px solid rgba(255, 170, 0, 0.15);
+  padding: 35px 45px;
+  border-radius: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  text-align: left;
+  transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.maintenance-banner:hover {
+  border: 1px solid var(--accent);
+  transform: scale(1.01);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.maintenance-info h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+}
+
+.maintenance-info p {
+  font-size: 15px;
+  max-width: 580px;
+  line-height: 1.6;
+}
+
+.maintenance-legal {
+  margin-top: 20px;
+  font-size: 11px;
+  color: var(--text-muted);
+  font-style: italic;
+  letter-spacing: 0.3px;
+}
+
+/* =========================
+   AUTRES SECTIONS
+========================= */
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+td:first-child {
+  text-align: left;
+  font-weight: 500;
+  color: #aaa;
+  width: 25%;
+}
+
+th:nth-child(3), td:nth-child(3) {
+  background: rgba(255, 170, 0, 0.04); /* Léger fond orange */
+  border-left: 1px solid rgba(255, 170, 0, 0.2);
+  border-right: 1px solid rgba(255, 170, 0, 0.2);
+  color: #fff;
+}
+
+th:nth-child(3) {
+  color: #ffaa00;
+  font-size: 20px;
+  border-top: 2px solid #ffaa00;
+}
+
+th {
+  color: var(--accent);
+}
+
+.detail {
+  display: block;
+  font-size: 11px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #222;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.faq-item h3 {
+  position: relative;
+  padding-right: 20px;
+}
+
+.faq-item h3::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  color: var(--accent);
+  transition: 0.3s;
+}
+
+.faq-item.active h3::after {
+  content: "-";
+}
+
+.faq-answer {
+  display: none;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.cta-final {
+  text-align: center;
+  padding: 120px 8%;
+  background: transparent;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+/* =========================
+   MEDIA QUERIES
+========================= */
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .maintenance-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .maintenance-info p {
+    margin-bottom: 20px;
+  }
+
+  .pricing {
+    gap: 20px;
+  }
+  
+  .card {
+    width: 100%;
+  }
+}

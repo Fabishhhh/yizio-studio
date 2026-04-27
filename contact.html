@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Fabien Verhulst</title>
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+  </head>
+
+  <body>
+    <div class="grid-bg"></div>
+
+<header class="navbar">
+  <div class="logo">Yizio.</div>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="offres.html">Offres</a>
+    <a href="projets.html">Projets</a>
+    <a href="process.html">Process</a>
+    <a href="competences.html">Compétences</a>
+    <a href="apropos.html">À propos</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="menu-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+    <section class="contact-hero">
+      <div class="glow"></div>
+      <div class="hero-content">
+        <span class="badge">Contact</span>
+        <h1>
+          Parlons de votre projet.<br />
+          <span class="accent">Construisons quelque chose d’ambitieux.</span>
+        </h1>
+        <p>
+          Décrivez-moi votre vision, vos objectifs et vos besoins. Je vous
+          réponds sous 24h.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact-section reveal">
+      <div class="contact-left">
+        <h2>Travaillons ensemble</h2>
+
+        <p>
+          Chaque projet commence par une conversation. Mon objectif : comprendre
+          votre marque, vos ambitions et vos enjeux.
+        </p>
+
+        <div class="contact-info">
+          <div class="info-item">
+            <span>Email</span>
+            <p>fabien.verhulstpro@gmail.com</p>
+          </div>
+          <div class="info-item">
+            <span>Disponibilité</span>
+            <p>Ouvert aux nouveaux projets</p>
+          </div>
+          <div class="info-item">
+            <span>Délai de réponse</span>
+            <p>Moins de 24 heures</p>
+          </div>
+        </div>
+      </div>
+
+  <div class="contact-right">
+    <form id="contact-form-page" class="contact-form">
+      <div class="form-group">
+        <label>Nom</label>
+        <input type="text" name="name" required />
+      </div>
+
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" name="email" required />
+      </div>
+
+<div class="form-group">
+  <label>Formule sélectionnée</label>
+  <select name="project_type" id="project_type" required>
+    <option value="">Sélectionnez</option>
+    <option value="Pack Essentiel (590€)">Pack Essentiel (590 euros)</option>
+    <option value="Pack Business (990€)">Pack Business (990 euros)</option>
+    <option value="Sur-mesure">Projet Sur-devis</option>
+    <option value="Autre demande">Autre demande</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label>Voulez-vous bénéficier de l'option maintenance ?</label>
+  <select name="maintenance" id="maintenance" required>
+    <option value="OUI">Oui</option>
+    <option value="NON">Non</option>
+  </select>
+</div>
+
+      <div class="form-group">
+        <label>Décrivez votre projet</label>
+        <textarea name="message" rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary">Envoyer la demande</button>
+
+      <p class="form-message"></p>
+    </form>
+  </div>
+</section>
+
+    <section class="contact-cta">
+      <h2>Votre marque mérite un site à son niveau.</h2>
+      <p>Je transforme votre vision en expérience digitale performante.</p>
+    </section>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+      // On initialise juste EmailJS ici
+      emailjs.init("dY0WJ9yPACVvpd4K_");
+    </script>
+
+    <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const offre = urlParams.get('offre');
+
+    const projectSelect = document.getElementById('project_type');
+    const budgetSelect = document.getElementById('budget');
+
+    if (offre === 'essentiel') {
+      projectSelect.value = 'essentiel';
+      budgetSelect.value = '590';
+    } else if (offre === 'business') {
+      projectSelect.value = 'business';
+      budgetSelect.value = '990';
+    } else if (offre === 'sur-mesure') {
+      projectSelect.value = 'sur-mesure';
+    }
+  });
+</script>
+
+    <footer>
+      <p>© 2026 Fabien Verhulst. Tous droits réservés.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

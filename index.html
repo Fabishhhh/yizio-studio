@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fabien Verhulst | UX UI Designer & Développeur Web</title>
+  <link rel="stylesheet" href="css/accueil.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+  <script type="text/javascript">
+     (function(){
+        emailjs.init("template_z8ceowf"); // <-- remplace par ta Public Key EmailJS
+     })();
+  </script>
+</head>
+
+  <body>
+    <div class="grid-bg"></div>
+
+<header class="navbar">
+  <div class="logo">Yizio.</div>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="offres.html">Offres</a>
+    <a href="projets.html">Projets</a>
+    <a href="process.html">Process</a>
+    <a href="competences.html">Compétences</a>
+    <a href="apropos.html">À propos</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="menu-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+    <section class="hero">
+      <div class="glow"></div>
+
+      <div class="hero-content">
+        <span class="badge">Web designer & intégrateur</span>
+
+        <h1>
+          Je crée des sites web
+          <span class="accent">sur-mesure</span><br />
+          pour marques ambitieuses
+        </h1>
+
+        <p>
+          Maquettes Figma, identité visuelle et sites WordPress livrés clé en
+          main. Du concept à la mise en ligne, je transforme votre vision en
+          expérience digitale.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#contact" class="btn-primary">Discutons de votre projet</a>
+          <a href="#projets" class="btn-secondary">Voir mes projets</a>        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <span class="section-tag">CE QUE JE PROPOSE</span>
+      <h2>Des solutions design complètes pour votre marque</h2>
+      <p class="section-desc">
+        De la conception visuelle à la mise en ligne, chaque étape est pensée
+        pour donner vie à votre vision.
+      </p>
+
+      <div class="services-grid">
+        <div class="card">
+          <div class="icon"></div>
+          <h3>Identité visuelle</h3>
+          <p>Création d’une identité forte et mémorable.</p>
+        </div>
+        <div class="card">
+          <div class="icon"></div>
+          <h3>Maquettes Figma</h3>
+          <p>Wireframes et prototypes haute fidélité.</p>
+        </div>
+        <div class="card">
+          <div class="icon"></div>
+          <h3>Création WordPress</h3>
+          <p>Sites administrables et performants.</p>
+        </div>
+        <div class="card">
+          <div class="icon"></div>
+          <h3>Intégration HTML/CSS</h3>
+          <p>Code responsive et optimisé.</p>
+        </div>
+        <div class="card">
+          <div class="icon"></div>
+          <h3>Refonte de site</h3>
+          <p>Modernisation UX & UI.</p>
+        </div>
+        <div class="card">
+          <div class="icon"></div>
+          <h3>Optimisation SEO</h3>
+          <p>Meilleure visibilité sur Google.</p>
+        </div>
+      </div>
+    </section>
+
+<section class="projects" id="projets">
+  <span class="section-tag">PROJETS</span>
+  <h2>Cas clients sélectionnés</h2>
+  <div class="projects-slider">
+    
+    <div class="project-card">
+      <div class="project-image">
+        <img src="images/vipvroom.png" alt="Projet VIPVROOM - Yizio" />
+      </div>
+      <div class="project-content">
+        <h3>VIPVROOM</h3>
+        <p class="project-category">Site vitrine</p>
+        <p class="project-desc">
+          Création et optimisation d’un site WordPress pour VIP VROOM, service de chauffeur VTC. Amélioration de l’UX, design moderne et optimisation SEO.
+        </p>
+        <div class="project-tags">
+          <span>WordPress</span>
+          <span>Figma</span>
+          <span>SEO</span>
+        </div>
+        <a href="https://vipvroom.com" target="_blank">
+          <button class="project-btn">Voir le projet</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-image">
+        <img src="images/mediadatafeed.png" alt="Projet Media Data Feed - Yizio" />
+      </div>
+      <div class="project-content">
+        <h3>Media Data Feed</h3>
+        <p class="project-category">Refonte UX</p>
+        <p class="project-desc">
+          Création d’un site WordPress pour Media Data Feed, catalogue complet de services digitaux performants et optimisation SEO.
+        </p>
+        <div class="project-tags">
+          <span>Figma</span>
+          <span>UX</span>
+          <span>UI</span>
+        </div>
+        <a href="https://mediadatafeed.com" target="_blank">
+          <button class="project-btn">Voir le projet</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-image">
+        <img src="images/pauseup.png" alt="Projet PauseUp - Yizio" />
+      </div>
+      <div class="project-content">
+        <h3>PauseUp</h3>
+        <p class="project-category">Codage en HTML/CSS</p>
+        <p class="project-desc">
+          Plateforme permettant aux télétravailleurs de planifier des pauses. Intégration design moderne et UX adaptée.
+        </p>
+        <div class="project-tags">
+          <span>WordPress</span>
+          <span>Design</span>
+        </div>
+        <a href="pageconstruction.html">
+          <button class="project-btn">Voir le projet</button>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <section class="process" id="process">
+      <span class="section-tag">MA MÉTHODE</span>
+      <h2>Un process clair, du brief à la mise en ligne</h2>
+
+      <div class="timeline">
+        <div class="step">
+          <span>01</span>
+          <h3>Échange</h3>
+          <p>
+            On discute de votre projet, vos besoins et vos objectifs pour
+            définir ensemble la direction à prendre.
+          </p>
+        </div>
+        <div class="step">
+          <span>02</span>
+          <h3>Maquette</h3>
+          <p>
+            Je crée les maquettes dans Figma avec l’identité visuelle, la
+            structure et les interactions clés.
+          </p>
+        </div>
+        <div class="step">
+          <span>03</span>
+          <h3>Validation</h3>
+          <p>
+            Nous revoyons ensemble le design. Ajustements et itérations jusqu’à
+            votre satisfaction complète.
+          </p>
+        </div>
+        <div class="step">
+          <span>04</span>
+          <h3>Développement</h3>
+          <p>
+            Intégration responsive, micro-animations et mise en place du CMS.
+            Chaque détail est soigné.
+          </p>
+        </div>
+        <div class="step">
+          <span>05</span>
+          <h3>Livraison</h3>
+          <p>
+            Déploiement, formation et accompagnement. Votre site est en ligne,
+            prêt à performer.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="skills-wrapper" id="skills">
+      <div class="skill-col">
+            <h3>Design</h3>
+            <div class="skill">
+          <div class="skill-top">
+            <span>Figma</span>
+            <span class="percent">95%</span>
+          </div>
+          <div class="bar">
+            <div class="fill" data-width="95%"></div>
+          </div>
+        </div>
+    
+        <div class="skill">
+          <div class="skill-top">
+            <span>Photoshop</span>
+            <span class="percent">85%</span>
+          </div>
+          <div class="bar">
+            <div class="fill" data-width="85%"></div>
+          </div>
+        </div>
+    
+        <div class="skill">
+          <div class="skill-top">
+            <span>Illustrator</span>
+            <span class="percent">80%</span>
+          </div>
+          <div class="bar">
+            <div class="fill" data-width="80%"></div>
+          </div>
+        </div>
+    
+        <div class="skill">
+          <div class="skill-top">
+            <span>InDesign</span>
+            <span class="percent">80%</span>
+          </div>
+          <div class="bar">
+            <div class="fill" data-width="80%"></div>
+          </div>
+        </div>
+    
+        <div class="skill">
+          <div class="skill-top">
+            <span>UI Design</span>
+            <span class="percent">90%</span>
+          </div>
+          <div class="bar">
+            <div class="fill" data-width="90%"></div>
+          </div>
+        </div>
+    
+        <div class="skill">
+          <div class="skill-top">
+            <span>UX Design</span>
+            <span class="percent">90%</span>
+          </div>
+          <div class="bar">
+            <div class="fill" data-width="90%"></div>
+          </div>
+        </div>
+    
+      </div>
+    
+    
+      <div class="skill-col">
+          <h3>Technique</h3>
+            <div class="skill">
+          <div class="skill-top">
+            <span>HTML / CSS</span>
+            <span class="percent">95%</span>
+          </div>
+          <div class="bar">
+            <div class="fill" data-width="95%"></div>
+          </div>
+        </div>
+    
+        <div class="skill">
+          <div class="skill-top">
+            <span>WordPress</span>
+            <span class="percent">90%</span>
+          </div>
+          <div class="bar">
+            <div class="fill" data-width="90%"></div>
+          </div>
+        </div>
+    
+        <div class="skill">
+          <div class="skill-top">
+            <span>Webflow</span>
+            <span class="percent">75%</span>
+          </div>
+          <div class="bar">
+            <div class="fill" data-width="85%"></div>
+          </div>
+        </div>
+    
+        <div class="skill">
+          <div class="skill-top">
+            <span>Responsive Design</span>
+            <span class="percent">95%</span>
+          </div>
+          <div class="bar">
+            <div class="fill" data-width="95%"></div>
+          </div>
+        </div>
+    
+        <div class="skill">
+          <div class="skill-top">
+            <span>VS Code</span>
+            <span class="percent">100%</span>
+          </div>
+          <div class="bar">
+            <div class="fill" data-width="100%"></div>
+          </div>
+        </div>
+    
+        <div class="skill">
+          <div class="skill-top">
+            <span>Trello</span>
+            <span class="percent">100%</span>
+          </div>
+          <div class="bar">
+            <div class="fill" data-width="100%"></div>
+          </div>
+        </div>
+          </div>
+        </div>
+
+    <section class="about" id="about">
+        <div class="about-visual">
+  <img src="images/fabien.png" alt="Photo Fabien Verhulst" class="profile-pic" />
+</div>
+
+      
+
+      <div class="about-content">
+        <span class="section-tag">À PROPOS</span>
+        <h2>Web Designer orienté intégration</h2>
+        <p>
+          Formée à la Wild Code School, je suis passionnée par la création d'expériences web qui allient esthétique et fonctionnalité. Mon approche combine la rigueur du design system avec la créativité de la direction artistique.
+Mon profil hybride design et technique me permet de concevoir des maquettes dans Figma, de créer des identités visuelles percutantes et d'intégrer le tout en code propre et réactif.
+Chaque projet est une opportunité de raconter une histoire, celle de votre marque, à travers un site web qui vous ressemble et vous permet de performer
+        </p>
+			</div>
+    </section>
+
+<section class="contact" id="contact">
+  <span class="section-tag">CONTACT</span>
+  <h2>Discutons de votre projet</h2>
+
+<div class="contact-wrapper">
+    <div class="contact-info">
+      <p>fabien.verhulstpro@gmail.com</p>
+    </div>
+
+<form id="contact-form" class="contact-form">
+  <div class="form-group">
+            <label style="display:block; text-align:left; font-size:13px; color:#aaa; margin-bottom:8px;">Nom</label>
+    <input type="text" name="name" placeholder="Jacques Michel" required />
+  </div>
+
+  <div class="form-group">
+            <label style="display:block; text-align:left; font-size:13px; color:#aaa; margin-bottom:8px;">Email</label>
+    <input type="email" name="email" placeholder="jacques.michel@gmail.com" required />
+  </div>
+
+      <div class="form-group">
+        <label style="display:block; text-align:left; font-size:13px; color:#aaa; margin-bottom:8px;">Formule souhaitée</label>
+        <select name="project_type" id="project_type" required>
+          <option value="">Sélectionnez une option</option>
+          <option value="Pack Essentiel (590€)">Pack Essentiel (590 euros)</option>
+          <option value="Pack Business (990€)">Pack Business (990 euros)</option>
+          <option value="Sur-mesure">Projet Sur-devis</option>
+          <option value="Autre demande">Autre demande</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label style="display:block; text-align:left; font-size:13px; color:#aaa; margin-bottom:8px;">Option Maintenance (25€/mois)</label>
+        <select name="maintenance" id="maintenance" required>
+          <option value="OUI">Oui</option>
+          <option value="NON">Non</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+                <label style="display:block; text-align:left; font-size:13px; color:#aaa; margin-bottom:8px;">Message</label>
+        <textarea name="message" placeholder="Décrivez votre projet en quelques lignes..." rows="5" required></textarea>
+      </div>
+
+      <button class="btn-primary" type="submit">Envoyer la demande</button>
+      <p class="form-message"></p>
+    </form>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  emailjs.init("dY0WJ9yPACVvpd4K_"); // ta Public Key EmailJS
+</script>
+
+    <script src="js/script.js"></script>
+
+    <footer>
+      <p>© 2026 Fabien Verhulst. Tous droits réservés.</p>
+    </footer>
+  </body>
+</html>
