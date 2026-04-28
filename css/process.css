@@ -4,8 +4,10 @@
   box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
+  max-width: 100%;
+  overflow-x: hidden; /* C'est ÇA qui fixe le menu burger */
+  position: relative;
   scroll-behavior: smooth;
 }
 
@@ -13,7 +15,12 @@ body {
   font-family: "Inter", sans-serif;
   background: #050505;
   color: #fff;
-  overflow-x: hidden;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 100vw;
+  box-sizing: border-box;
 }
 
 .grid-bg {
@@ -352,6 +359,32 @@ footer {
   color: var(--text-muted);
 }
 
+@media (max-width: 900px) {
+  .story {
+    flex-direction: column;
+    text-align: center;
+    padding: 80px 20px;
+    gap: 40px;
+  }
+
+  .story-left {
+    max-width: 100%;
+  }
+
+  .story-right {
+    align-items: center; /* Centre les stats */
+  }
+
+  .expertise-grid {
+    grid-template-columns: 1fr; /* Une seule colonne */
+    padding: 0;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+}
+
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 40px;
@@ -435,4 +468,25 @@ footer {
   .testimonial p {
     font-size: 13px;
   }
+
+  @media (max-width: 480px) {
+  .hero h1 {
+    font-size: 32px;
+    padding: 0 10px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .expertise, 
+  .timeline-section, 
+  .cta {
+    padding: 60px 20px; /* Moins d'espace vide sur les côtés */
+  }
+
+  .stat h3 {
+    font-size: 40px; /* Stats un peu plus petites pour pas qu'elles débordent */
+  }
+}
 }
