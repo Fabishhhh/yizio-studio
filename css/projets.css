@@ -374,8 +374,9 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .hero h1 {
-    font-size: 40px;
+  .hero h1, 
+  .projects-hero h1 { /* On ajoute la classe ici */
+    font-size: 38px !important;
   }
 
   section {
@@ -423,9 +424,10 @@ footer {
     .project-card {
     min-width: 95%;
   }
-  .hero h1 {
-    font-size: 32px;
-    padding: 0 10px;
+  .hero h1, 
+  .projects-hero h1 { 
+    font-size: 28px !important; /* Plus petit pour tenir sur une ligne ou deux max */
+    line-height: 1.1;
   }
 
   .hero p {
