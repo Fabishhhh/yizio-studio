@@ -248,6 +248,28 @@ footer {
   color: var(--text-muted);
 }
 
+footer a {
+    display: inline-block;
+    margin: 0 12px;
+    color: #f9fafb;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease, transform 0.2s ease;
+    position: relative;
+}
+
+/* Effet hover */
+footer a:hover {
+    color: #3b82f6;
+    transform: translateY(-2px);
+}
+
+footer p {
+  margin-top: 10px;
+  margin-bottom: 30px; 
+  color: #aaa;
+}
+
 @media (max-width: 1024px) {
   section {
     padding: 100px 40px;
@@ -343,6 +365,15 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
+
+      footer {
+        padding: 30px 15px;
+    }
+
+    footer a {
+        display: block;
+        margin: 10px 0;
+    }
 
 @media (max-width: 480px) {
 .hero h1 {

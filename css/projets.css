@@ -296,11 +296,31 @@ footer {
   text-align: center;
   padding: 40px;
   font-size: 14px;
-  color: #aaa;
-  background: #0c0c0c;
+  color: var(--text-muted);
 }
 
-/* Responsive */
+footer a {
+    display: inline-block;
+    margin: 0 12px;
+    color: #f9fafb;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease, transform 0.2s ease;
+    position: relative;
+}
+
+/* Effet hover */
+footer a:hover {
+    color: #3b82f6;
+    transform: translateY(-2px);
+}
+
+footer p {
+  margin-top: 10px;
+  margin-bottom: 30px; 
+  color: #aaa;
+}
+
 @media (max-width: 1024px) {
   .projects-slider {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -414,6 +434,15 @@ footer {
   section {
     padding: 100px 30px;
   }
+
+        footer {
+        padding: 30px 15px;
+    }
+
+    footer a {
+        display: block;
+        margin: 10px 0;
+    }
 
 }
 
