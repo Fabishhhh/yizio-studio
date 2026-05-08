@@ -15,8 +15,20 @@
 }
 
 .logo {
-  font-weight: 600;
-  color: #fff;
+  display: flex;
+  align-items: center;
+  height: 100%; /* S'adapte à la hauteur de ta navbar */
+}
+
+.logo img {
+  height: 40px; /* Ajuste la taille selon tes besoins */
+  width: auto;  /* Garde les proportions de l'image */
+  display: block;
+  transition: transform 0.3s ease; /* Petit effet au survol */
+}
+
+.logo img:hover {
+  transform: scale(1.05); /* Le logo grossit légèrement au survol */
 }
 
 .navbar nav {
@@ -100,5 +112,9 @@
   /* affichage burger */
   .menu-btn {
     display: flex;
+  }
+
+  .logo img {
+    height: 32px; 
   }
 }
