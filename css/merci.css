@@ -1,0 +1,231 @@
+/* ==========================================================================
+   PAGE MERCI - STYLE PREMIUM ULTRA (YIZIO)
+   ========================================================================== */
+
+/* Conteneur principal calé sous la navbar */
+.merci-container {
+  max-width: 1100px;
+  margin: 120px auto 60px auto;
+  padding: 0 24px;
+  position: relative;
+  text-align: center;
+}
+
+/* Lueur Orange Diffuse en Arrière-plan */
+.glow-effect {
+  position: absolute;
+  top: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, rgba(255, 170, 0, 0.25), transparent 70%);
+  filter: blur(100px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Badge de validation */
+.success-badge {
+  display: inline-block;
+  padding: 8px 18px;
+  background: rgba(255, 170, 0, 0.06);
+  border: 1px solid rgba(255, 170, 0, 0.3);
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #ffaa00;
+  margin-bottom: 30px;
+}
+
+/* Titres & Textes Hero */
+.merci-hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 54px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.merci-hero .accent {
+  color: #ffaa00;
+}
+
+.merci-hero .hero-subtitle {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #aaa;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* --- SECTION ETAPES SUIVANTES --- */
+.process-next {
+  margin-top: 90px;
+}
+
+.process-next h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.steps-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  text-align: left;
+}
+
+.step-card {
+  flex: 1;
+  background: #0c0c0c;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 35px 28px;
+  border-radius: 16px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 170, 0, 0.2);
+}
+
+.step-num {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffaa00;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.step-card h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.step-card p {
+  color: #888;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* --- ENCADRE APPEL D'URGENCE --- */
+.urgent-callout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #0e0e0e 0%, #15110a 100%);
+  border: 1px solid rgba(255, 170, 0, 0.15);
+  border-radius: 16px;
+  padding: 40px;
+  margin-top: 80px;
+  text-align: left;
+}
+
+.callout-content h3 {
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.callout-content p {
+  color: #aaa;
+  font-size: 15px;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.btn-tel {
+  display: inline-block;
+  background: #ffaa00;
+  color: #000;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-tel:hover {
+  background: #e69900;
+  box-shadow: 0 0 20px rgba(255, 170, 0, 0.4);
+}
+
+/* --- NAVIGATION BAS DE PAGE --- */
+.merci-navigation {
+  margin-top: 70px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 40px;
+}
+
+.merci-navigation p {
+  color: #666;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.link-item {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.link-item:hover {
+  color: #ffaa00;
+}
+
+/* --- RESPONSIVE / MEDIA QUERIES --- */
+@media (max-width: 900px) {
+  .merci-hero h1 {
+    font-size: 40px;
+  }
+  
+  .steps-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .urgent-callout {
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+    padding: 30px 20px;
+  }
+  
+  .callout-content p {
+    max-width: 100%;
+  }
+  
+  .btn-tel {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .merci-container {
+    margin-top: 100px;
+  }
+  
+  .merci-hero h1 {
+    font-size: 32px;
+  }
+  
+  .merci-hero .hero-subtitle {
+    font-size: 15px;
+  }
+  
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
