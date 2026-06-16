@@ -116,7 +116,7 @@
     
     <div class="project-card">
       <div class="project-image">
-        <img src="images/vipvroom.png" alt="Projet VIPVROOM - Yizio" />
+        <img src="images/vipvroom2.png" alt="Projet VIPVROOM - Yizio" />
       </div>
       <div class="project-content">
         <h3>VIPVROOM</h3>
@@ -137,7 +137,7 @@
 
     <div class="project-card">
       <div class="project-image">
-        <img src="images/cediapsy.png" alt="Projet Cediapsy - Yizio" />
+        <img src="images/cediapsy2.png" alt="Projet Cediapsy - Yizio" />
       </div>
       <div class="project-content">
         <h3>Cediapsy</h3>
@@ -158,19 +158,21 @@
 
     <div class="project-card">
       <div class="project-image">
-        <img src="images/pauseup.png" alt="Projet PauseUp - Yizio" />
+        <img src="images/lycee-saint-joseph3.png" alt="Projet Lycée Saint-Joseph - Yizio" />
       </div>
       <div class="project-content">
-        <h3>PauseUp</h3>
-        <p class="project-category">Codage en HTML/CSS</p>
+        <h3>Lycée Saint-Joseph</h3>
+        <p class="project-category">Projet concept / site institutionnel</p>
         <p class="project-desc">
-          Plateforme permettant aux télétravailleurs de planifier des pauses. Intégration design moderne et UX adaptée.
+          Refonte UX/UI d’un site pour un établissement scolaire. Projet test non officiel réalisé dans un cadre pédagogique afin d’améliorer la lisibilité, l’accessibilité et la hiérarchisation des informations.
         </p>
         <div class="project-tags">
-          <span>WordPress</span>
-          <span>Design</span>
+          <span>Figma</span>
+          <span>VS Code</span>
+          <span>Vercel</span>
+
         </div>
-        <a href="pageconstruction.html">
+        <a href="https://saint-joseph.vercel.app/">
           <button class="project-btn">Voir le projet</button>
         </a>
       </div>
@@ -379,24 +381,32 @@ Chaque projet est une opportunité de raconter une histoire, celle de votre marq
   <span class="section-tag">CONTACT</span>
   <h2>Discutons de votre projet</h2>
 
-<div class="contact-wrapper">
+  <div class="contact-wrapper">
+    
     <div class="contact-info">
       <p>contact@yizio.fr</p>
     </div>
 
-<form id="contact-form" class="contact-form">
-  <div class="form-group">
-            <label style="display:block; text-align:left; font-size:13px; color:#aaa; margin-bottom:8px;">Nom</label>
-    <input type="text" name="name" placeholder="Jacques Michel" required />
-  </div>
-
-  <div class="form-group">
-            <label style="display:block; text-align:left; font-size:13px; color:#aaa; margin-bottom:8px;">Email</label>
-    <input type="email" name="email" placeholder="jacques.michel@gmail.com" required />
-  </div>
+    <form id="contact-form" class="contact-form">
 
       <div class="form-group">
-        <label style="display:block; text-align:left; font-size:13px; color:#aaa; margin-bottom:8px;">Formule souhaitée</label>
+        <label style="display:block; text-align:left; font-size:13px; color:#aaa; margin-bottom:8px;">
+          Nom
+        </label>
+        <input type="text" name="name" placeholder="Jacques Michel" required />
+      </div>
+
+      <div class="form-group">
+        <label style="display:block; text-align:left; font-size:13px; color:#aaa; margin-bottom:8px;">
+          Email
+        </label>
+        <input type="email" name="email" placeholder="jacques.michel@gmail.com" required />
+      </div>
+
+      <div class="form-group">
+        <label style="display:block; text-align:left; font-size:13px; color:#aaa; margin-bottom:8px;">
+          Formule souhaitée
+        </label>
         <select name="project_type" id="project_type" required>
           <option value="">Sélectionnez une option</option>
           <option value="Pack Essentiel (590€)">Pack Essentiel (590 euros)</option>
@@ -407,7 +417,9 @@ Chaque projet est une opportunité de raconter une histoire, celle de votre marq
       </div>
 
       <div class="form-group">
-        <label style="display:block; text-align:left; font-size:13px; color:#aaa; margin-bottom:8px;">Option Maintenance (25€/mois)</label>
+        <label style="display:block; text-align:left; font-size:13px; color:#aaa; margin-bottom:8px;">
+          Option Maintenance (25€/mois)
+        </label>
         <select name="maintenance" id="maintenance" required>
           <option value="OUI">Oui</option>
           <option value="NON">Non</option>
@@ -415,19 +427,54 @@ Chaque projet est une opportunité de raconter une histoire, celle de votre marq
       </div>
 
       <div class="form-group">
-                <label style="display:block; text-align:left; font-size:13px; color:#aaa; margin-bottom:8px;">Message</label>
+        <label style="display:block; text-align:left; font-size:13px; color:#aaa; margin-bottom:8px;">
+          Message
+        </label>
         <textarea name="message" placeholder="Décrivez votre projet en quelques lignes..." rows="5" required></textarea>
       </div>
 
-      <button class="btn-primary" type="submit">Envoyer la demande</button>
+      <button class="btn-primary" type="submit">
+        Envoyer la demande
+      </button>
+
       <p class="form-message"></p>
     </form>
   </div>
 </section>
 
+<!-- EmailJS -->
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
 <script>
-  emailjs.init("dY0WJ9yPACVvpd4K_"); // ta Public Key EmailJS
+  emailjs.init("dY0WJ9yPACVvpd4K_");
+
+  const form = document.getElementById("contact-form");
+  const btn = form.querySelector(".btn-primary");
+  const formMessage = document.querySelector(".form-message");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    btn.textContent = "Envoi en cours...";
+    btn.disabled = true;
+
+    emailjs.sendForm("service_em5osgp", "template_m93nmci", this)
+      .then(() => {
+        btn.textContent = "Envoyé !";
+
+        // ✅ REDIRECTION VERS PAGE MERCI
+        window.location.href = "merci.html";
+      })
+      .catch((error) => {
+        console.log(error);
+
+        btn.textContent = "Envoyer la demande";
+        btn.disabled = false;
+
+        formMessage.style.color = "#ff4444";
+        formMessage.textContent = "Erreur lors de l'envoi. Réessayez.";
+      });
+  });
 </script>
 
     <script src="js/script.js"></script>
