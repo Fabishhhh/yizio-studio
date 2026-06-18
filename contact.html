@@ -7,6 +7,9 @@
     <meta name="description" content="Un projet de site web ou de nouveau logo ? Contactez Yizio pour obtenir un devis gratuit et discuter de votre stratégie digitale dès aujourd'hui.">
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/navbar.css" />
+        
+    <script src="js/script.js" defer></script>
+
 
     <!-- Google tag (gtag.js) - OBLIGATOIRE SUR TOUTES LES PAGES -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18133673896"></script>
@@ -166,7 +169,7 @@
 
     // Envoi des données via EmailJS
     // IMPORTANT : Remplace 'YOUR_SERVICE_ID' et 'YOUR_TEMPLATE_ID' par tes vrais identifiants EmailJS
-    emailjs.sendForm('service_em5osgp', 'template_m93nmci', this)
+    emailjs.sendForm('service_em5osgp', 'template_m93nmci', form)
       .then(() => {
         btn.textContent = "Demande envoyée !";
         // Redirection vers ta nouvelle page de remerciement
@@ -188,6 +191,5 @@
 <a href="gestion-cookies.html">Gestion des Cookies</a>
     </footer>
 
-    <script src="js/script.js"></script>
   </body>
 </html>
