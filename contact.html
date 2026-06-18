@@ -137,53 +137,6 @@
 <!-- On garde impérativement la bibliothèque EmailJS -->
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-<script>
-  // 1. Initialisation d'EmailJS
-  emailjs.init("dY0WJ9yPACVvpd4K_");
-
-  // 2. Gestion de la pré-sélection de l'offre via l'URL (On la garde !)
-  window.addEventListener('DOMContentLoaded', () => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const offre = urlParams.get('offre');
-    const projectSelect = document.getElementById('project_type');
-
-    if (offre === 'essentiel') {
-      projectSelect.value = 'Pack Essentiel (590€)';
-    } else if (offre === 'business') {
-      projectSelect.value = 'Pack Business (990€)';
-    } else if (offre === 'sur-mesure') {
-      projectSelect.value = 'Pack Premium (1390€)';
-    }
-  });
-
-  // 3. Gestion de la soumission du formulaire + Redirection
-  const form = document.getElementById('contact-form-page');
-  const formMessage = document.querySelector('.form-message');
-
-  form.addEventListener('submit', function(event) {
-    event.preventDefault();
-    
-    const btn = form.querySelector('.btn-primary');
-    btn.textContent = "Envoi en cours...";
-    btn.disabled = true;
-
-    // Envoi des données via EmailJS
-    // IMPORTANT : Remplace 'YOUR_SERVICE_ID' et 'YOUR_TEMPLATE_ID' par tes vrais identifiants EmailJS
-    emailjs.sendForm('service_em5osgp', 'template_m93nmci', form)
-      .then(() => {
-        btn.textContent = "Demande envoyée !";
-        // Redirection vers ta nouvelle page de remerciement
-        window.location.href = "merci.html";
-      }, (error) => {
-        btn.textContent = "Envoyer la demande";
-        btn.disabled = false;
-        formMessage.style.color = "#ff4444";
-        formMessage.textContent = "Une erreur est survenue, veuillez réessayer.";
-        console.log('FAILED...', error);
-      });
-  });
-</script>
-
     <footer>
       <p>© 2026 Fabien Verhulst. Tous droits réservés.</p>
       <a href="mentions-legales.html">Mentions Légales</a>

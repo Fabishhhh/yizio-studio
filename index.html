@@ -52,7 +52,7 @@
       <div class="glow"></div>
 
       <div class="hero-content">
-        <span class="badge">Web designer & intégrateur</span>
+        <span class="badge">Accueil</span>
 
         <h1>
           Je crée des sites web
@@ -449,38 +449,6 @@ Chaque projet est une opportunité de raconter une histoire, celle de votre marq
 
 <!-- EmailJS -->
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-<script>
-  emailjs.init("dY0WJ9yPACVvpd4K_");
-
-  const form = document.getElementById("contact-form");
-  const btn = form.querySelector(".btn-primary");
-  const formMessage = document.querySelector(".form-message");
-
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    btn.textContent = "Envoi en cours...";
-    btn.disabled = true;
-
-    emailjs.sendForm("service_em5osgp", "template_m93nmci", this)
-      .then(() => {
-        btn.textContent = "Envoyé !";
-
-        // ✅ REDIRECTION VERS PAGE MERCI
-        window.location.href = "merci.html";
-      })
-      .catch((error) => {
-        console.log(error);
-
-        btn.textContent = "Envoyer la demande";
-        btn.disabled = false;
-
-        formMessage.style.color = "#ff4444";
-        formMessage.textContent = "Erreur lors de l'envoi. Réessayez.";
-      });
-  });
-</script>
 
     <footer>
       <p>© 2026 Fabien Verhulst. Tous droits réservés.</p>

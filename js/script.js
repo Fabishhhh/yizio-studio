@@ -1,3 +1,8 @@
+(function () {
+
+if (typeof emailjs !== "undefined") {
+  emailjs.init("dY0WJ9yPACVvpd4K_");
+}
 document.addEventListener("DOMContentLoaded", () => {
   const menuBtn = document.querySelector(".menu-btn");
   const nav = document.querySelector(".navbar nav");
@@ -32,8 +37,7 @@ if (form) {
 
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, this, PUBLIC_KEY)
       .then(() => {
-        alert("Message envoyé ! ✅");
-        form.reset();
+        window.location.href = "merci.html";
       })
       .catch((err) => {
         alert("Erreur, message non envoyé... ❌");
@@ -42,21 +46,45 @@ if (form) {
   });
 }
 
-
 // FORMULAIRE PAGE CONTACT
 const formContactPage = document.getElementById("contact-form-page");
 
 if (formContactPage) {
+  // Pré-sélection de l'offre via l'URL (?offre=essentiel, business, sur-mesure)
+  const urlParams = new URLSearchParams(window.location.search);
+  const offre = urlParams.get("offre");
+  const projectSelect = document.getElementById("project_type");
+
+  if (projectSelect) {
+    if (offre === "essentiel") {
+      projectSelect.value = "Pack Essentiel (590€)";
+    } else if (offre === "business") {
+      projectSelect.value = "Pack Business (990€)";
+    } else if (offre === "sur-mesure") {
+      projectSelect.value = "Pack Premium (1390€)";
+    }
+  }
+
+  const btnContactPage = formContactPage.querySelector(".btn-primary");
+  const formMessageContactPage = formContactPage.querySelector(".form-message");
+
   formContactPage.addEventListener("submit", function (e) {
     e.preventDefault();
 
+    btnContactPage.textContent = "Envoi en cours...";
+    btnContactPage.disabled = true;
+
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, this, PUBLIC_KEY)
       .then(() => {
-        alert("Message envoyé ! ✅");
-        this.reset();
+        window.location.href = "merci.html";
       })
       .catch((err) => {
-        alert("Erreur, message non envoyé... ❌");
+        btnContactPage.textContent = "Envoyer la demande";
+        btnContactPage.disabled = false;
+        if (formMessageContactPage) {
+          formMessageContactPage.style.color = "#ff4444";
+          formMessageContactPage.textContent = "Une erreur est survenue, veuillez réessayer.";
+        }
         console.error(err);
       });
   });
@@ -88,3 +116,5 @@ if (faqItems.length > 0) {
     });
   });
 }
+
+})();
