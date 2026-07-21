@@ -1,166 +1,437 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Notre Processus | Yizio </title>
-    <meta name="description" content="Découvrez la méthode Yizio : de l'analyse de vos besoins au déploiement de votre site, une approche structurée pour garantir la réussite de votre projet digital.">
-    <link rel="stylesheet" href="css/process.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <body>
-    <div class="grid-bg"></div>
+  <title>Notre processus | Yizio</title>
+  <meta
+    name="description"
+    content="Découvrez la méthode Yizio : cadrage, conception, validation, développement, tests et mise en ligne de votre site web."
+  />
 
-<header class="navbar">
-<div class="logo">
-    <a href="index.html">
-      <img src="images/yizio (2).png" alt="Yizio Logo">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="css/process.css" />
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="navbar" id="navbar">
+    <a class="logo logo-wordmark" href="index.html" aria-label="Accueil Yizio">
+    <img src="images/yizio_logo.png" alt="Yizio" class="logo-img">
     </a>
-  </div>
-  <nav>
-    <a href="index.html">Accueil</a>
-    <a href="offres.html">Offres</a>
-    <a href="projets.html">Projets</a>
-    <a href="process.html">Process</a>
-    <a href="competences.html">Compétences</a>
-    <a href="apropos.html">À propos</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <div class="menu-btn">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</header>
 
-    <section class="hero">
-      <div class="glow"></div>
-      <div class="hero-content">
-        <span class="badge">Mon processus</span>
+    <nav aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="offres.html">Offres</a>
+      <a href="projets.html">Projets</a>
+      <a class="active" href="process.html" aria-current="page">Process</a>
+      <a href="competences.html">Compétences</a>
+      <a href="apropos.html">À propos</a>
+    </nav>
+
+    <a class="nav-cta magnetic" href="contact.html">
+      Contact
+      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </a>
+
+    <button class="menu-btn" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="process-hero">
+      <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+
+      <div class="hero-copy reveal">
+        <span class="eyebrow"><i class="fa-solid fa-route"></i> Notre méthode</span>
         <h1>
-          Un process clair pour
-          <span class="accent">chaque projet</span>
-          du brief à la livraison
+          Un processus clair,<br />
+          <span>sans zone floue.</span>
         </h1>
         <p>
-          Je vous accompagne étape par étape pour transformer vos idées en
-          expériences digitales concrètes, efficaces et esthétiques.
+          Chaque étape est pensée pour vous faire gagner du temps, sécuriser les décisions
+          et transformer votre idée en un site cohérent, crédible et prêt à convertir.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary magnetic" href="contact.html">
+            Parler de mon projet
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a class="btn btn-secondary" href="#methode">Voir les étapes</a>
+        </div>
+
+        <div class="hero-reassurance" aria-label="Engagements du processus">
+          <span><i class="fa-solid fa-check"></i> Validation à chaque étape</span>
+          <span><i class="fa-solid fa-check"></i> Suivi transparent</span>
+          <span><i class="fa-solid fa-check"></i> Livraison accompagnée</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" data-delay="120">
+        <div class="workflow-card tilt-card">
+          <div class="workflow-topbar">
+            <div class="window-dots"><i></i><i></i><i></i></div>
+            <span>yizio / votre-projet</span>
+            <span class="status"><i></i> En progression</span>
+          </div>
+
+          <div class="workflow-body">
+            <div class="workflow-heading">
+              <span>Vue du projet</span>
+              <strong>De l’idée à la mise en ligne</strong>
+            </div>
+
+            <div class="workflow-list">
+              <article class="workflow-item done">
+                <span class="workflow-number">01</span>
+                <div><strong>Cadrage</strong><small>Objectifs et besoins validés</small></div>
+                <i class="fa-solid fa-check"></i>
+              </article>
+              <article class="workflow-item done">
+                <span class="workflow-number">02</span>
+                <div><strong>Direction créative</strong><small>Structure et univers visuel</small></div>
+                <i class="fa-solid fa-check"></i>
+              </article>
+              <article class="workflow-item current">
+                <span class="workflow-number">03</span>
+                <div><strong>Développement</strong><small>Intégration et interactions</small></div>
+                <span class="pulse"></span>
+              </article>
+              <article class="workflow-item">
+                <span class="workflow-number">04</span>
+                <div><strong>Mise en ligne</strong><small>Tests, livraison et suivi</small></div>
+                <i class="fa-solid fa-arrow-right"></i>
+              </article>
+            </div>
+
+            <div class="workflow-footer">
+              <div><span>Progression</span><strong>72%</strong></div>
+              <div class="progress"><span></span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="floating-note note-one">
+          <i class="fa-solid fa-comments"></i>
+          <div><strong>Échanges simples</strong><span>Un point clair à chaque validation</span></div>
+        </div>
+
+        <div class="floating-note note-two">
+          <i class="fa-solid fa-shield-halved"></i>
+          <div><strong>Décisions sécurisées</strong><span>Rien n’est développé au hasard</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-band reveal">
+      <p>Une méthode structurée ne ralentit pas le projet.</p>
+      <strong>Elle évite les retours inutiles et accélère les bonnes décisions.</strong>
+    </section>
+
+    <section class="method-section" id="methode">
+      <div class="section-heading reveal">
+        <span class="section-kicker">LE PROCESSUS YIZIO</span>
+        <h2>Six étapes, un seul objectif :<br /><span>un projet maîtrisé.</span></h2>
+        <p>
+          Vous savez toujours où en est le projet, ce qui est attendu de vous et ce qui arrive ensuite.
         </p>
       </div>
+
+      <div class="method-layout">
+        <aside class="method-sticky reveal">
+          <span class="sticky-label">Votre parcours</span>
+          <h3>Une collaboration simple, même si le web n’est pas votre métier.</h3>
+          <p>
+            Yizio traduit vos objectifs en choix concrets. Vous validez les décisions importantes,
+            sans avoir à gérer la complexité technique.
+          </p>
+          <a href="contact.html" class="text-link">Présenter mon projet <i class="fa-solid fa-arrow-right"></i></a>
+        </aside>
+
+        <div class="method-steps">
+          <article class="method-step spotlight-card reveal active">
+            <div class="step-side"><span>01</span><i class="fa-regular fa-comments"></i></div>
+            <div class="step-main">
+              <span class="step-phase">Comprendre</span>
+              <h3>Échange et cadrage</h3>
+              <p>
+                Nous faisons le point sur votre activité, votre cible, vos objectifs, vos contraintes
+                et le rôle exact que devra jouer votre futur site.
+              </p>
+              <div class="step-details">
+                <span><i class="fa-solid fa-check"></i> Brief stratégique</span>
+                <span><i class="fa-solid fa-check"></i> Périmètre du projet</span>
+                <span><i class="fa-solid fa-check"></i> Priorités définies</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="method-step spotlight-card reveal">
+            <div class="step-side"><span>02</span><i class="fa-solid fa-sitemap"></i></div>
+            <div class="step-main">
+              <span class="step-phase">Structurer</span>
+              <h3>Architecture et contenus</h3>
+              <p>
+                Nous organisons les pages, les messages et les parcours afin que vos visiteurs comprennent
+                rapidement votre offre et sachent quelle action effectuer.
+              </p>
+              <div class="step-details">
+                <span><i class="fa-solid fa-check"></i> Arborescence</span>
+                <span><i class="fa-solid fa-check"></i> Parcours utilisateur</span>
+                <span><i class="fa-solid fa-check"></i> Hiérarchie des messages</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="method-step spotlight-card reveal">
+            <div class="step-side"><span>03</span><i class="fa-solid fa-pen-ruler"></i></div>
+            <div class="step-main">
+              <span class="step-phase">Concevoir</span>
+              <h3>Direction artistique et maquettes</h3>
+              <p>
+                L’identité visuelle prend forme dans des maquettes pensées pour votre image, votre marché
+                et la lisibilité de votre proposition de valeur.
+              </p>
+              <div class="step-details">
+                <span><i class="fa-solid fa-check"></i> Univers visuel</span>
+                <span><i class="fa-solid fa-check"></i> Maquettes principales</span>
+                <span><i class="fa-solid fa-check"></i> Version mobile</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="method-step spotlight-card reveal">
+            <div class="step-side"><span>04</span><i class="fa-solid fa-code"></i></div>
+            <div class="step-main">
+              <span class="step-phase">Construire</span>
+              <h3>Développement et interactions</h3>
+              <p>
+                Après validation du design, les maquettes deviennent un site rapide, responsive et agréable
+                à utiliser sur ordinateur, tablette et téléphone.
+              </p>
+              <div class="step-details">
+                <span><i class="fa-solid fa-check"></i> Intégration responsive</span>
+                <span><i class="fa-solid fa-check"></i> Micro-interactions</span>
+                <span><i class="fa-solid fa-check"></i> Optimisation technique</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="method-step spotlight-card reveal">
+            <div class="step-side"><span>05</span><i class="fa-solid fa-flask-vial"></i></div>
+            <div class="step-main">
+              <span class="step-phase">Vérifier</span>
+              <h3>Tests et ajustements</h3>
+              <p>
+                Le site est contrôlé avant sa mise en ligne : affichage, formulaires, liens, lisibilité,
+                performances et comportement sur les principaux formats d’écran.
+              </p>
+              <div class="step-details">
+                <span><i class="fa-solid fa-check"></i> Contrôle qualité</span>
+                <span><i class="fa-solid fa-check"></i> Corrections finales</span>
+                <span><i class="fa-solid fa-check"></i> Validation client</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="method-step spotlight-card reveal">
+            <div class="step-side"><span>06</span><i class="fa-solid fa-rocket"></i></div>
+            <div class="step-main">
+              <span class="step-phase">Lancer</span>
+              <h3>Mise en ligne et accompagnement</h3>
+              <p>
+                Le site est déployé, sécurisé et vérifié une dernière fois. Vous recevez les informations
+                nécessaires pour prendre en main votre nouvel outil.
+              </p>
+              <div class="step-details">
+                <span><i class="fa-solid fa-check"></i> Déploiement</span>
+                <span><i class="fa-solid fa-check"></i> Prise en main</span>
+                <span><i class="fa-solid fa-check"></i> Support inclus selon l’offre</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section class="process">
-      <div class="timeline">
-        <div class="step">
+    <section class="validation-section">
+      <div class="validation-copy reveal">
+        <span class="section-kicker">VOUS GARDEZ LE CONTRÔLE</span>
+        <h2>Vous validez avant que nous avancions.</h2>
+        <p>
+          Pas de surprise à la livraison. Chaque décision structurante est présentée clairement,
+          puis validée avant de passer à l’étape suivante.
+        </p>
+      </div>
 
-          <span>01</span>
-          <h3>Échange</h3>
-          <p>
-            On discute de votre projet, vos besoins et vos objectifs pour
-            définir ensemble la direction à prendre.
-          </p>
-        </div>
-
-        <div class="step">
-          <span>02</span>
-          <h3>Maquette</h3>
-          <p>
-            Je crée les maquettes dans Figma avec l’identité visuelle, la
-            structure et les interactions clés.
-          </p>
-        </div>
-
-        <div class="step">
-          <span>03</span>
+      <div class="validation-grid">
+        <article class="validation-card spotlight-card reveal">
+          <span class="validation-icon"><i class="fa-regular fa-eye"></i></span>
+          <h3>Visibilité</h3>
+          <p>Vous savez ce qui a été réalisé, ce qui est en cours et la prochaine décision à prendre.</p>
+        </article>
+        <article class="validation-card spotlight-card reveal" data-delay="80">
+          <span class="validation-icon"><i class="fa-regular fa-circle-check"></i></span>
           <h3>Validation</h3>
-          <p>
-            Nous revoyons ensemble le design. Ajustements et itérations jusqu’à
-            votre satisfaction complète.
-          </p>
-        </div>
-
-        <div class="step">
-          <span>04</span>
-          <h3>Développement</h3>
-          <p>
-            Intégration responsive, micro-animations et mise en place du CMS.
-            Chaque détail est soigné.
-          </p>
-        </div>
-
-        <div class="step">
-          <span>05</span>
-          <h3>Livraison</h3>
-          <p>
-            Déploiement, formation et accompagnement. Votre site est en ligne,
-            prêt à performer.
-          </p>
-        </div>
+          <p>Les étapes importantes sont approuvées avant le développement ou la mise en ligne.</p>
+        </article>
+        <article class="validation-card spotlight-card reveal" data-delay="160">
+          <span class="validation-icon"><i class="fa-solid fa-arrows-rotate"></i></span>
+          <h3>Ajustements</h3>
+          <p>Les retours sont regroupés et traités de manière structurée pour éviter les allers-retours confus.</p>
+        </article>
       </div>
     </section>
 
-    <section class="stats">
-      <h2>Quelques chiffres clés</h2>
-      <div class="stats-grid">
-        <div class="stat-card">
-          <span>20+</span>
-          <p>Projets réalisés</p>
-        </div>
-        <div class="stat-card">
-          <span>100%</span>
-          <p>Clients satisfaits</p>
-        </div>
-        <div class="stat-card">
-          <span>2</span>
-          <p>Années d’expériences</p>
-        </div>
-        <div class="stat-card">
-          <span>50+</span>
-          <p>Maquettes Figma créées</p>
-        </div>
+    <section class="responsibilities-section">
+      <div class="section-heading compact reveal">
+        <span class="section-kicker">QUI FAIT QUOI ?</span>
+        <h2>Une collaboration fluide repose sur des rôles clairs.</h2>
+      </div>
+
+      <div class="responsibility-grid">
+        <article class="responsibility-card yizio-card reveal">
+          <div class="responsibility-head">
+            <span class="mini-logo"><span>yi</span><strong>z</strong><span>io</span></span>
+            <span>Yizio s’occupe de</span>
+          </div>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Structurer le projet et conseiller les choix</li>
+            <li><i class="fa-solid fa-check"></i> Concevoir l’interface et l’expérience</li>
+            <li><i class="fa-solid fa-check"></i> Développer et optimiser le site</li>
+            <li><i class="fa-solid fa-check"></i> Tester, mettre en ligne et accompagner</li>
+          </ul>
+        </article>
+
+        <article class="responsibility-card client-card reveal" data-delay="100">
+          <div class="responsibility-head">
+            <span class="client-icon"><i class="fa-regular fa-user"></i></span>
+            <span>Vous intervenez pour</span>
+          </div>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Expliquer votre activité et vos objectifs</li>
+            <li><i class="fa-solid fa-check"></i> Fournir les contenus et accès nécessaires</li>
+            <li><i class="fa-solid fa-check"></i> Regrouper vos retours et validations</li>
+            <li><i class="fa-solid fa-check"></i> Respecter les délais de réponse convenus</li>
+          </ul>
+        </article>
       </div>
     </section>
 
-    <section class="testimonials">
-      <h2>Ils m’ont fait confiance</h2>
-      <div class="testimonials-grid">
-        <div class="testimonial">
-          <p>
-            “Fabien a transformé notre vision en un site web magnifique et
-            fonctionnel. Le process est clair et professionnel.”
-          </p>
-          <span>— Client VIPVROOM</span>
-        </div>
-        <div class="testimonial">
-          <p>
-            “Chaque étape du projet était détaillée, transparente et agréable à
-            suivre. Très satisfait du résultat final !”
-          </p>
-          <span>— Client Media Data Feed</span>
-        </div>
-        <div class="testimonial">
-          <p>
-            “Un vrai designer qui comprend nos besoins et les transforme en
-            UX/UI performante.”
-          </p>
-          <span>— Client PauseUp</span>
-        </div>
+    <section class="faq-section">
+      <div class="section-heading compact reveal">
+        <span class="section-kicker">QUESTIONS FRÉQUENTES</span>
+        <h2>Ce qu’il faut savoir avant de commencer.</h2>
+      </div>
+
+      <div class="faq-list reveal">
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Combien de temps faut-il pour créer un site ?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Le délai dépend de l’offre et de la complexité du projet. Une landing page peut être réalisée en 7 à 10 jours, tandis qu’un site multipage demande généralement 2 à 3 semaines, sous réserve de recevoir les contenus et validations dans les délais convenus.</p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>À quel moment dois-je fournir mes textes et mes images ?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Les éléments nécessaires sont identifiés dès le cadrage. Ils doivent idéalement être transmis avant la conception détaillée afin d’éviter de bâtir le site sur des contenus provisoires.</p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Puis-je demander des modifications pendant le projet ?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Oui. Des phases de retours sont prévues aux moments clés. Pour rester efficace, les demandes sont regroupées et traitées avant la validation définitive de chaque étape.</p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Que se passe-t-il après la mise en ligne ?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Une période de support est incluse selon l’offre choisie. L’option Sérénité permet ensuite de prolonger l’hébergement, la surveillance et la maintenance technique du site.</p>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section class="projects-cta">
-      <h2>Un projet en tête ?</h2>
-      <a href="contact.html" class="btn-primary">Discutons ensemble</a>
+    <section class="final-cta reveal">
+      <div class="cta-glow" aria-hidden="true"></div>
+      <span class="cta-kicker">VOTRE PROJET PEUT COMMENCER ICI</span>
+      <h2>Une méthode claire.<br />Un site qui vous ressemble vraiment.</h2>
+      <p>Présentez votre besoin et recevez une première orientation adaptée à votre projet.</p>
+      <div class="cta-actions">
+        <a class="btn btn-light magnetic" href="contact.html">Démarrer mon projet <i class="fa-solid fa-arrow-right"></i></a>
+        <a class="cta-link" href="offres.html">Découvrir les offres</a>
+      </div>
     </section>
+  </main>
 
-     <footer>
-      <p>© 2026 Fabien Verhulst. Tous droits réservés.</p>
-      <a href="mentions-legales.html">Mentions Légales</a>
-<a href="politique-confidentialite.html">Politique de Confidentialité</a>
-<a href="gestion-cookies.html">Gestion des Cookies</a>
-    </footer>
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a class="logo logo-wordmark footer-logo" href="index.html" aria-label="Accueil Yizio">
+    <img src="images/yizio_logo.png" alt="Yizio" class="logo-img">
+        </a>
+        <p>Sites web premium, pensés pour valoriser votre activité et convertir vos visiteurs.</p>
+      </div>
 
-    <script src="js/script.js"></script>
-  </body>
+      <div class="footer-column">
+        <strong>Navigation</strong>
+        <a href="offres.html">Offres</a>
+        <a href="projets.html">Projets</a>
+        <a href="process.html">Process</a>
+        <a href="apropos.html">À propos</a>
+      </div>
+
+      <div class="footer-column">
+        <strong>Contact</strong>
+        <a href="contact.html">Contact</a>
+        <a href="mailto:contact@yizio.fr">contact@yizio.fr</a>
+      </div>
+
+      <div class="footer-column">
+        <strong>Informations</strong>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="politique-confidentialite.html">Confidentialité</a>
+        <a href="gestion-cookies.html">Gestion des cookies</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Yizio — Fabien Verhulst. Tous droits réservés.</p>
+      <span>Conçu avec exigence en France.</span>
+    </div>
+  </footer>
+</body>
 </html>

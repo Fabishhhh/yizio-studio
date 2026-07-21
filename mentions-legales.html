@@ -1,33 +1,240 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Mentions Légales - Yizio</title>
-    <meta name="description" content="Consultez les mentions légales de l'agence Yizio. Informations juridiques sur l'entreprise, l'hébergement du site et la propriété intellectuelle.">
-    <link rel="stylesheet" href="css/mentions-legales.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Mentions légales | Yizio</title>
+  <meta
+    name="description"
+    content="Consultez les mentions légales de l'agence Yizio : éditeur du site, hébergement, propriété intellectuelle et responsabilités."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/mentions-legales.css" />
 </head>
+
 <body>
-    <header>
-        <h1>Mentions Légales</h1>
-    </header>
-    
-    <section>
-        <h2>1. Présentation du site</h2>
-        <p>En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé aux utilisateurs du site <strong>yizio.fr</strong> l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi :</p>
-        <p><strong>Propriétaire / Éditeur :</strong> Fabien Verhulst - Agence Yizio<br>
-        <strong>Statut :</strong> Entrepreneur Individuel - Micro-entreprise<br>
-        <strong>Siège social :</strong> Argenteuil, Val-d'Oise, France<br>
-        <strong>Téléphone :</strong> 06 33 34 50 28<br>
-        <strong>Email :</strong> contact@yizio.fr</p>
+  <div class="page-grid" aria-hidden="true"></div>
 
-        <h2>2. Hébergement</h2>
-        <p>Le site est hébergé par : Hostinger<br>
-        61 Lordou Vironos Street, 6023 Larnaca, Chypre</p>
+  <header class="navbar">
+    <a class="logo" href="index.html" aria-label="Accueil Yizio">
+      <img src="images/yizio_logo.png" alt="Yizio" class="logo-img" />
+    </a>
 
-        <h2>3. Propriété intellectuelle</h2>
-        <p>L'ensemble des éléments constituant le site yizio.fr (textes, graphismes, logos, sons, photos, animations) sont la propriété exclusive de Fabien Verhulst, sauf mention contraire. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable.</p>
+    <a href="index.html" class="back-home">
+      Retour au site
+      <span aria-hidden="true">↗</span>
+    </a>
+  </header>
+
+  <main>
+    <section class="legal-hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+
+      <div class="container">
+        <span class="eyebrow">Informations juridiques</span>
+
+        <h1>Mentions légales</h1>
+
+        <p>
+          Retrouvez ici les informations relatives à l’éditeur du site Yizio,
+          à son hébergement et aux conditions d’utilisation de ses contenus.
+        </p>
+
+        <div class="hero-meta">
+          <span>Dernière mise à jour</span>
+          <strong>Juillet 2026</strong>
+        </div>
+      </div>
     </section>
-    
-    <a href="/" class="back-link">← Retour au site</a>
+
+    <section class="legal-content">
+      <div class="container legal-layout">
+        <aside class="legal-summary">
+          <span class="summary-label">Sommaire</span>
+
+          <nav aria-label="Sommaire de la page">
+            <a href="#editeur">Éditeur du site</a>
+            <a href="#hebergement">Hébergement</a>
+            <a href="#propriete">Propriété intellectuelle</a>
+            <a href="#responsabilite">Responsabilité</a>
+            <a href="#donnees">Données personnelles</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </aside>
+
+        <article class="legal-card">
+          <section id="editeur" class="legal-section">
+            <span class="section-number">01</span>
+
+            <div>
+              <h2>Éditeur du site</h2>
+
+              <p>
+                Conformément à l’article 6 de la loi n° 2004-575 du 21 juin 2004
+                pour la confiance dans l’économie numérique, les utilisateurs du
+                site <strong>yizio.fr</strong> sont informés de l’identité de son
+                éditeur.
+              </p>
+
+              <div class="info-card">
+                <dl>
+                  <div>
+                    <dt>Propriétaire et éditeur</dt>
+                    <dd>Fabien Verhulst — Agence Yizio</dd>
+                  </div>
+
+                  <div>
+                    <dt>Statut juridique</dt>
+                    <dd>Entrepreneur individuel — Micro-entreprise</dd>
+                  </div>
+
+                  <div>
+                    <dt>Siège social</dt>
+                    <dd>Argenteuil, Val-d’Oise, France</dd>
+                  </div>
+
+                  <div>
+                    <dt>Téléphone</dt>
+                    <dd><a href="tel:+33633345028">06 33 34 50 28</a></dd>
+                  </div>
+
+                  <div>
+                    <dt>Adresse électronique</dt>
+                    <dd>
+                      <a href="mailto:contact@yizio.fr">contact@yizio.fr</a>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </section>
+
+          <section id="hebergement" class="legal-section">
+            <span class="section-number">02</span>
+
+            <div>
+              <h2>Hébergement</h2>
+
+              <p>Le site Yizio.fr est hébergé par :</p>
+
+              <div class="provider-card">
+                <span class="provider-label">Hébergeur</span>
+                <strong>Hostinger International Ltd.</strong>
+                <p>61 Lordou Vironos Street, 6023 Larnaca, Chypre</p>
+              </div>
+            </div>
+          </section>
+
+          <section id="propriete" class="legal-section">
+            <span class="section-number">03</span>
+
+            <div>
+              <h2>Propriété intellectuelle</h2>
+
+              <p>
+                L’ensemble des éléments constituant le site Yizio.fr, notamment
+                les textes, graphismes, logos, photographies, illustrations,
+                animations, éléments visuels et structure générale, est protégé
+                par le droit de la propriété intellectuelle.
+              </p>
+
+              <p>
+                Sauf mention contraire, ces éléments sont la propriété exclusive
+                de Fabien Verhulst. Toute reproduction, représentation,
+                modification, publication, adaptation ou exploitation, totale ou
+                partielle, est interdite sans autorisation écrite préalable.
+              </p>
+
+              <div class="legal-note">
+                <strong>Utilisation des contenus</strong>
+                <p>
+                  Toute demande d’autorisation peut être adressée à
+                  <a href="mailto:contact@yizio.fr">contact@yizio.fr</a>.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section id="responsabilite" class="legal-section">
+            <span class="section-number">04</span>
+
+            <div>
+              <h2>Limitation de responsabilité</h2>
+
+              <p>
+                Yizio s’efforce de fournir sur le site des informations aussi
+                exactes et à jour que possible. Toutefois, l’exactitude,
+                l’exhaustivité ou l’actualité des informations diffusées ne
+                peuvent être garanties en permanence.
+              </p>
+
+              <p>
+                L’utilisateur reste responsable de son matériel, de sa connexion
+                internet et de l’usage qu’il fait des informations accessibles
+                sur le site.
+              </p>
+            </div>
+          </section>
+
+          <section id="donnees" class="legal-section">
+            <span class="section-number">05</span>
+
+            <div>
+              <h2>Données personnelles</h2>
+
+              <p>
+                Les informations relatives à la collecte, à l’utilisation et à
+                la protection des données personnelles sont détaillées dans la
+                politique de confidentialité du site.
+              </p>
+
+              <a href="politique-confidentialite.html" class="document-link">
+                Consulter la politique de confidentialité
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </section>
+
+          <section id="contact" class="legal-section">
+            <span class="section-number">06</span>
+
+            <div>
+              <h2>Contact</h2>
+
+              <p>
+                Pour toute question relative au site, à son contenu ou aux
+                présentes mentions légales, vous pouvez contacter Yizio :
+              </p>
+
+              <a href="mailto:contact@yizio.fr" class="email-link">
+                contact@yizio.fr
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </section>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© 2026 Yizio — Fabien Verhulst. Tous droits réservés.</p>
+
+      <div class="footer-links">
+        <a href="mentions-legales.html" aria-current="page">Mentions légales</a>
+        <a href="politique-confidentialite.html">Confidentialité</a>
+        <a href="gestion-cookies.html">Cookies</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

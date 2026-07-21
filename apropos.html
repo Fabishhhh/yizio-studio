@@ -1,166 +1,412 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>À propos - Yizio</title>
-    <meta name="description" content="Découvrez l'histoire de Yizio et le parcours de Fabien Verhulst, designer passionné par la création d'expériences numériques uniques et performantes.">
-    <link rel="stylesheet" href="css/apropos.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <body>
-    <div class="grid-bg"></div>
+  <title>À propos | Yizio</title>
+  <meta
+    name="description"
+    content="Découvrez Fabien Verhulst, fondateur de Yizio, et une approche qui réunit stratégie, UX/UI design et développement web pour créer des sites utiles, distinctifs et performants."
+  />
 
-<header class="navbar">
-<div class="logo">
-    <a href="index.html">
-      <img src="images/yizio (2).png" alt="Yizio Logo">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/apropos.css" />
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <div class="page-grid" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="navbar" data-navbar>
+    <a class="logo logo-wordmark" href="index.html" aria-label="Accueil Yizio">
+    <img src="images/yizio_logo.png" alt="Yizio" class="logo-img">
     </a>
-  </div>
-  <nav>
-    <a href="index.html">Accueil</a>
-    <a href="offres.html">Offres</a>
-    <a href="projets.html">Projets</a>
-    <a href="process.html">Process</a>
-    <a href="competences.html">Compétences</a>
-    <a href="apropos.html">À propos</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <div class="menu-btn">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</header>
 
-    <section class="hero">
-      <div class="glow"></div>
+    <nav class="nav-links" id="navMenu" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="offres.html">Offres</a>
+      <a href="projets.html">Projets</a>
+      <a href="process.html">Process</a>
+      <a href="competences.html">Compétences</a>
+      <a href="apropos.html" class="active" aria-current="page">À propos</a>
+    </nav>
 
-      <div class="hero-content">
-        <span class="badge">À propos</span>
-        <h1>
-          Designer stratégique.<br />
-          <span class="accent">Créatif. Technique. Visionnaire.</span>
-        </h1>
-        <p>
-          Je conçois des expériences digitales premium qui allient direction
-          artistique, performance technique et réflexion stratégique.
-        </p>
+    <a href="contact.html" class="nav-cta magnetic">
+      Contact
+      <span aria-hidden="true">↗</span>
+    </a>
+
+    <button
+      class="menu-btn"
+      id="burgerBtn"
+      type="button"
+      aria-label="Ouvrir le menu"
+      aria-controls="navMenu"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="about-hero">
+      <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            À propos de Yizio
+          </span>
+
+          <h1>
+            Derrière Yizio, une vision simple :
+            <span>faire du web un vrai levier pour votre activité.</span>
+          </h1>
+
+          <p class="hero-text">
+            Je suis Fabien Verhulst, designer UI et créateur de Yizio. J’aide les
+            entreprises à transformer leurs idées en expériences digitales
+            claires, distinctives et pensées pour convaincre.
+          </p>
+
+          <div class="hero-actions">
+            <a href="contact.html" class="btn btn-primary magnetic">
+              Parler de votre projet
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a href="projets.html" class="btn btn-secondary">
+              Voir les réalisations
+            </a>
+          </div>
+
+          <div class="hero-proof">
+            <div>
+              <strong>Stratégie</strong>
+              <span>avant la décoration</span>
+            </div>
+            <div>
+              <strong>Sur-mesure</strong>
+              <span>sans solution générique</span>
+            </div>
+            <div>
+              <strong>Un interlocuteur</strong>
+              <span>du brief à la mise en ligne</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" data-tilt>
+          <div class="portrait-card spotlight-card">
+            <div class="portrait-top">
+              <span class="availability">
+                <span></span>
+                Disponible pour de nouveaux projets
+              </span>
+              <span class="portrait-index">Y / 01</span>
+            </div>
+
+            <div class="portrait-stage">
+              <div class="portrait-monogram" aria-hidden="true">FV</div>
+
+              <div class="floating-label label-one">
+                <span>01</span>
+                UX/UI design
+              </div>
+
+              <div class="floating-label label-two">
+                <span>02</span>
+                Développement
+              </div>
+
+              <div class="floating-label label-three">
+                <span>03</span>
+                Stratégie digitale
+              </div>
+            </div>
+
+            <div class="portrait-bottom">
+              <div>
+                <span class="small-label">Fondateur</span>
+                <strong>Fabien Verhulst</strong>
+              </div>
+              <p>Concepteur Designer UI</p>
+            </div>
+          </div>
+
+          <div class="visual-note note-top">
+            <span>Basé en France</span>
+            <strong>Projets partout</strong>
+          </div>
+
+          <div class="visual-note note-bottom">
+            <span>Approche</span>
+            <strong>Design + technique</strong>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="story reveal">
-      <div class="story-left">
-        <h2>Mon parcours</h2>
-
-        <p>
-          Formé au développement web, j’ai rapidement compris que ma vraie force
-          se situait à l’intersection entre le design et la technique.
-        </p>
-        <p>
-          Cette double compétence me permet aujourd’hui de concevoir des
-          expériences digitales complètes : pensées pour l’utilisateur,
-          structurées pour la performance et exécutées avec précision.
-        </p>
-        <p>
-          Chaque projet est une collaboration stratégique, pas seulement une
-          prestation graphique.
-        </p>
-      </div>
-
-      <div class="story-right">
-        <div class="stat">
-          <h3 class="counter" data-target="2">2</h3>
-          <span>Années d'expérience</span>
+    <section class="manifesto section-padding">
+      <div class="container manifesto-grid">
+        <div class="section-heading reveal">
+          <span class="section-kicker">La philosophie</span>
+          <h2>Un beau site ne suffit pas.</h2>
         </div>
 
-        <div class="stat">
-          <h3 class="counter" data-target="20">20</h3>
-          <span>Projets réalisés</span>
-        </div>
-
-        <div class="stat">
-          <h3 class="counter" data-target="100">100</h3>
-          <span>% d'implication</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="expertise reveal">
-      <h2>Mon expertise</h2>
-
-      <div class="expertise-grid">
-        <div class="expertise-card">
-          <h3>UX Strategy</h3>
-          <p>
-            Recherche utilisateur, architecture d’information, wireframes,
-            parcours optimisés.
+        <div class="manifesto-copy reveal">
+          <p class="manifesto-lead">
+            Un site doit rendre votre offre évidente, inspirer confiance et
+            guider naturellement le visiteur vers l’action.
           </p>
-        </div>
-        <div class="expertise-card">
-          <h3>UI & Direction Artistique</h3>
-          <p>
-            Identité visuelle, design system, cohérence graphique, expérience
-            premium.
-          </p>
-        </div>
 
-        <div class="expertise-card">
-          <h3>Intégration & Performance</h3>
           <p>
-            HTML/CSS, WordPress, responsive design, optimisation SEO et vitesse.
+            C’est pour cette raison que je ne commence pas un projet par les
+            couleurs ou les animations. Je commence par comprendre votre
+            activité, vos clients, votre différence et le résultat que vous
+            souhaitez obtenir.
           </p>
-        </div>
 
-        <div class="expertise-card">
-          <h3>Accompagnement stratégique</h3>
           <p>
-            Positionnement, branding, vision long terme, cohérence digitale
-            globale.
+            Le design devient alors un outil stratégique : chaque section a un
+            rôle, chaque interaction a une intention et chaque décision sert
+            votre image comme vos objectifs.
           </p>
         </div>
       </div>
     </section>
 
-    <section class="timeline-section reveal">
-      <h2>Mon évolution</h2>
-
-      <div class="timeline">
-        <div class="timeline-item">
-          <span>Septembre 2024 - Février 2025</span>
-          <h3>Développement web</h3>
-          <p>Apprentissage technique et bases solides en front-end.</p>
-        </div>
-
-        <div class="timeline-item">
-          <span>Février 2025 - Avril 2026</span>
-          <h3>UX/UI Design</h3>
+    <section class="values section-padding">
+      <div class="container">
+        <div class="section-intro reveal">
+          <div>
+            <span class="section-kicker">Ma manière de travailler</span>
+            <h2>Quatre principes qui guident chaque projet.</h2>
+          </div>
           <p>
-            Spécialisation dans l’expérience utilisateur et la direction
-            artistique.
+            Une collaboration claire, exigeante et humaine pour construire un
+            résultat cohérent jusque dans les moindres détails.
           </p>
         </div>
-        <div class="timeline-item">
-          <span>Février 2025 - Mai 2026</span>
-          <h3>Alternance UX/UI Design</h3>
-          <p>Alternance dans l'entreprise Media Data Feed.</p>
+
+        <div class="values-grid">
+          <article class="value-card spotlight-card reveal">
+            <span class="value-number">01</span>
+            <div class="value-icon" aria-hidden="true">◎</div>
+            <h3>Comprendre avant de créer</h3>
+            <p>
+              Votre activité, votre cible et vos enjeux définissent la direction
+              du projet. Le design vient ensuite traduire cette réflexion.
+            </p>
+          </article>
+
+          <article class="value-card spotlight-card reveal">
+            <span class="value-number">02</span>
+            <div class="value-icon" aria-hidden="true">◇</div>
+            <h3>Donner du sens aux détails</h3>
+            <p>
+              Typographie, rythme, contenus et interactions sont pensés comme un
+              ensemble, pas comme une accumulation d’effets.
+            </p>
+          </article>
+
+          <article class="value-card spotlight-card reveal">
+            <span class="value-number">03</span>
+            <div class="value-icon" aria-hidden="true">↗</div>
+            <h3>Concevoir pour durer</h3>
+            <p>
+              Le site doit rester lisible, rapide, adaptable et facile à faire
+              évoluer lorsque votre activité grandit.
+            </p>
+          </article>
+
+          <article class="value-card spotlight-card reveal">
+            <span class="value-number">04</span>
+            <div class="value-icon" aria-hidden="true">∞</div>
+            <h3>Collaborer avec transparence</h3>
+            <p>
+              Vous savez où en est le projet, ce qui est attendu et pourquoi
+              chaque décision est prise.
+            </p>
+          </article>
         </div>
+      </div>
     </section>
 
-    <section class="cta">
-      <h2>Construisons quelque chose d’impactant.</h2>
-      <a href="contact.html" class="btn-primary">Démarrer un projet</a>
+    <section class="journey section-padding">
+      <div class="container journey-grid">
+        <div class="journey-sticky reveal">
+          <span class="section-kicker">Le parcours</span>
+          <h2>De la technique à une vision complète du produit digital.</h2>
+          <p>
+            Mon parcours m’a permis de réunir conception visuelle, développement
+            et compréhension des objectifs d’une entreprise.
+          </p>
+
+          <a href="competences.html" class="text-link">
+            Découvrir mes compétences
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <div class="journey-list">
+          <article class="journey-item reveal">
+            <span class="journey-date">2024</span>
+            <div class="journey-content">
+              <span class="journey-tag">Fondations</span>
+              <h3>Développement web</h3>
+              <p>
+                Apprentissage du HTML, du CSS, du JavaScript et des fondamentaux
+                indispensables pour concevoir des interfaces réellement
+                réalisables et performantes.
+              </p>
+            </div>
+          </article>
+
+          <article class="journey-item reveal">
+            <span class="journey-date">2025</span>
+            <div class="journey-content">
+              <span class="journey-tag">Spécialisation</span>
+              <h3>UX/UI Design</h3>
+              <p>
+                Approfondissement de la recherche utilisateur, de l’architecture
+                de l’information, des prototypes et de la création de systèmes
+                visuels cohérents.
+              </p>
+            </div>
+          </article>
+
+          <article class="journey-item reveal">
+            <span class="journey-date">2025–2026</span>
+            <div class="journey-content">
+              <span class="journey-tag">Expérience professionnelle</span>
+              <h3>Alternance chez Media Data Feed</h3>
+              <p>
+                Mise en pratique de la conception UX/UI dans un contexte
+                professionnel, avec des contraintes réelles, des retours et une
+                logique de production.
+              </p>
+            </div>
+          </article>
+
+          <article class="journey-item reveal">
+            <span class="journey-date">2026</span>
+            <div class="journey-content">
+              <span class="journey-tag">Création</span>
+              <h3>Lancement de Yizio</h3>
+              <p>
+                Création d’une activité indépendante pour accompagner les
+                entreprises avec une approche plus directe, personnalisée et
+                complète.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <footer>
-      <p>© 2026 Fabien Verhulst. Tous droits réservés.</p>
-      <a href="mentions-legales.html">Mentions Légales</a>
-<a href="politique-confidentialite.html">Politique de Confidentialité</a>
-<a href="gestion-cookies.html">Gestion des Cookies</a>
-    </footer>
+    <section class="difference section-padding">
+      <div class="container difference-panel reveal">
+        <div class="difference-copy">
+          <span class="section-kicker">Pourquoi Yizio</span>
+          <h2>La souplesse d’un indépendant, avec une démarche d’agence.</h2>
+          <p>
+            Vous échangez directement avec la personne qui réfléchit, conçoit et
+            développe votre site. Il n’y a ni intermédiaire ni perte
+            d’information entre le brief et le résultat final.
+          </p>
+        </div>
 
-    <script src="js/script.js"></script>
+        <div class="difference-list">
+          <div>
+            <span>01</span>
+            <p>Une vision globale du projet, de la stratégie à la technique.</p>
+          </div>
+          <div>
+            <span>02</span>
+            <p>Une communication directe et un suivi réellement personnalisé.</p>
+          </div>
+          <div>
+            <span>03</span>
+            <p>Une identité conçue pour votre entreprise, jamais copiée-collée.</p>
+          </div>
+          <div>
+            <span>04</span>
+            <p>Un niveau d’attention élevé sur chaque détail visible ou invisible.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  </body>
+    <section class="about-cta section-padding">
+      <div class="container">
+        <div class="cta-panel reveal">
+          <div class="cta-orb" aria-hidden="true"></div>
+
+          <div class="cta-copy">
+            <span class="section-kicker">Votre projet</span>
+            <h2>Une idée ambitieuse mérite une exécution à sa hauteur.</h2>
+            <p>
+              Présentez-moi votre activité, vos objectifs et ce que vous aimeriez
+              améliorer. Nous verrons ensemble la meilleure direction à prendre.
+            </p>
+          </div>
+
+          <a href="contact.html" class="btn btn-dark magnetic">
+            Démarrer la conversation
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a class="logo logo-wordmark footer-logo" href="index.html" aria-label="Accueil Yizio">
+    <img src="images/yizio_logo.png" alt="Yizio" class="logo-img">
+        </a>
+        <p>Sites web premium, pensés pour valoriser votre activité et convertir vos visiteurs.</p>
+      </div>
+
+      <div class="footer-column">
+        <strong>Navigation</strong>
+        <a href="offres.html">Offres</a>
+        <a href="projets.html">Projets</a>
+        <a href="process.html">Process</a>
+        <a href="apropos.html">À propos</a>
+      </div>
+
+      <div class="footer-column">
+        <strong>Contact</strong>
+        <a href="contact.html">Contact</a>
+        <a href="mailto:contact@yizio.fr">contact@yizio.fr</a>
+      </div>
+
+      <div class="footer-column">
+        <strong>Informations</strong>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="politique-confidentialite.html">Confidentialité</a>
+        <a href="gestion-cookies.html">Gestion des cookies</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Yizio — Fabien Verhulst. Tous droits réservés.</p>
+      <span>Conçu avec exigence en France.</span>
+    </div>
+  </footer>
+</body>
 </html>

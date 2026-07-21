@@ -1,131 +1,362 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nos projets - Yizio</title>
-    <meta name="description" content="Explorez le portfolio de Yizio. Découvrez nos dernières réalisations en design graphique, interfaces UX/UI et développement web sur-mesure.">
-    <link rel="stylesheet" href="css/projets.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <body>
-    <div class="grid-bg"></div>
+  <title>Projets web & réalisations | Yizio</title>
+  <meta
+    name="description"
+    content="Découvrez les projets Yizio : création de sites vitrines, refontes UX/UI et expériences web sur mesure pensées pour inspirer confiance et convertir."
+  />
+  <link rel="canonical" href="https://yizio.fr/projets.html" />
 
-<header class="navbar">
-<div class="logo">
-    <a href="index.html">
-      <img src="images/yizio (2).png" alt="Yizio Logo">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="css/projets.css" />
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="navbar" id="navbar">
+    <a class="logo logo-wordmark" href="index.html" aria-label="Accueil Yizio">
+    <img src="images/yizio_logo.png" alt="Yizio" class="logo-img">
     </a>
-  </div>
-  <nav>
-    <a href="index.html">Accueil</a>
-    <a href="offres.html">Offres</a>
-    <a href="projets.html">Projets</a>
-    <a href="process.html">Process</a>
-    <a href="competences.html">Compétences</a>
-    <a href="apropos.html">À propos</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <div class="menu-btn">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</header>
 
-<section class="projects-hero">
-  <div class="grid-bg"></div> <div class="glow"></div>
+    <nav aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="offres.html">Offres</a>
+      <a class="active" href="projets.html" aria-current="page">Projets</a>
+      <a href="process.html">Process</a>
+      <a href="competences.html">Compétences</a>
+      <a href="apropos.html">À propos</a>
+    </nav>
 
-  <div class="hero-content">
-    <span class="badge">Mes projets</span>
-    <h1>Une sélection de <span class="accent">projets </br> récents</span></h1>
-    <p>
-      Chaque projet est conçu avec une approche stratégique mêlant design,
-      performance et expérience utilisateur.
-    </p>
-  </div>
-</section>
+    <a class="nav-cta magnetic" href="contact.html">
+      Contact
+      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </a>
 
-<section class="projects" id="projets">
-  <span class="section-tag">PROJETS</span>
-  <h2>Cas clients sélectionnés</h2>
-  <div class="projects-slider">
-    
-    <div class="project-card">
-      <div class="project-image">
-        <img src="images/vipvroom.png" alt="Projet VIPVROOM - Yizio" />
-      </div>
-      <div class="project-content">
-        <h3>VIPVROOM</h3>
-        <p class="project-category">Site vitrine</p>
-        <p class="project-desc">Création et optimisation d’un site WordPress pour VIP VROOM. Amélioration de l’UX, design moderne et optimisation SEO.</p>
-        <div class="project-tags">
-          <span>WordPress</span>
-          <span>Figma</span>
-          <span>SEO</span>
+    <button class="menu-btn" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="projects-hero">
+      <div class="hero-orb hero-orb-one"></div>
+      <div class="hero-orb hero-orb-two"></div>
+
+      <div class="hero-copy reveal">
+        <div class="eyebrow-pill">
+          <span></span>
+          Projets clients et concepts sélectionnés
         </div>
-        <a href="https://vipvroom.com" target="_blank">
-          <button class="project-btn">Voir le projet</button>
-        </a>
-      </div>
-    </div>
 
-    <div class="project-card">
-      <div class="project-image">
-        <img src="images/cediapsy2.png" alt="Projet Cédiapsy - Yizio" />
-      </div>
-      <div class="project-content">
-        <h3>Cédiapsy</h3>
-        <p class="project-category">Refonte UX</p>
-        <p class="project-desc">Refonte d’un site d’accompagnement psychologique avec un focus sur la confiance, l’accessibilité et la lisibilité des services.</p>
-        <div class="project-tags">
-          <span>Figma</span>
-          <span>VS Code</span>
-          <span>Github</span>
-          <span>Vercel</span>
+        <h1>
+          Des sites pensés pour être
+          <span>beaux, clairs et utiles.</span>
+        </h1>
+
+        <p>
+          Chaque projet part d’un besoin concret : mieux présenter une activité,
+          simplifier un parcours, rassurer un visiteur ou donner une image plus ambitieuse.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#realisations" class="btn btn-primary magnetic">
+            Explorer les projets
+            <i class="fa-solid fa-arrow-down"></i>
+          </a>
+          <a href="contact.html" class="btn btn-secondary">
+            Parler de mon projet
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
         </div>
-        <a href="https://cediapsy.vercel.app/" target="_blank">
-          <button class="project-btn">Voir le projet</button>
-        </a>
       </div>
-    </div>
 
-    <div class="project-card">
-      <div class="project-image">
-        <img src="images/lycee-saint-joseph.png" alt="Projet Lycee Saint Joseph - Yizio" />
-      </div>
-      <div class="project-content">
-        <h3>Lycee Saint Joseph</h3>
-        <p class="project-category">Site institutionnel</p>
-        <p class="project-desc">Refonte UX/UI d’un site pour un établissement scolaire. Projet test non officiel réalisé dans un cadre pédagogique afin d’améliorer la lisibilité, l’accessibilité et la hiérarchisation des informations.</p>
-        <div class="project-tags">
-          <span>Figma</span>
-          <span>VS Code</span>
-          <span>Vercel</span>
-          <span>Github</span>
+      <div class="hero-showcase tilt-card reveal" data-delay="140" aria-hidden="true">
+        <div class="browser-shell">
+          <div class="browser-bar">
+            <div class="browser-dots"><span></span><span></span><span></span></div>
+            <div class="browser-url">yizio.fr / projets</div>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div>
+
+          <div class="showcase-stage">
+            <article class="mini-project mini-project-main">
+              <img src="images/cediapsy2.png" alt="" />
+              <div><span>Refonte UX/UI</span><strong>Cédiapsy</strong></div>
+            </article>
+
+            <article class="mini-project mini-project-side mini-project-top">
+              <img src="images/vipvroom.png" alt="" />
+              <div><span>Site vitrine</span><strong>VIPVROOM</strong></div>
+            </article>
+
+            <article class="mini-project mini-project-side mini-project-bottom">
+              <img src="images/lycee-saint-joseph.png" alt="" />
+              <div><span>Concept</span><strong>Saint-Joseph</strong></div>
+            </article>
+          </div>
         </div>
-        <a href="https://saint-joseph.vercel.app/">
-          <button class="project-btn">Voir le projet</button>
-        </a>
-      </div>
-    </div>
 
-  </div>
-</section>
-    <!-- CTA -->
-    <section class="projects-cta">
-      <h2>Un projet en tête ?</h2>
-      <a href="contact.html" class="btn-primary"> Discutons ensemble </a>
+        <div class="floating-note floating-note-one">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <span>Design sur mesure</span>
+        </div>
+        <div class="floating-note floating-note-two">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <span>Responsive</span>
+        </div>
+      </div>
     </section>
 
-    <footer>
-      <p>© 2026 Fabien Verhulst. Tous droits réservés.</p>
-      <a href="mentions-legales.html">Mentions Légales</a>
-<a href="politique-confidentialite.html">Politique de Confidentialité</a>
-<a href="gestion-cookies.html">Gestion des Cookies</a>
-    </footer>
+    <section class="project-principles" aria-label="Approche projet Yizio">
+      <div><span>01</span><strong>Comprendre</strong><small>les vrais objectifs</small></div>
+      <div><span>02</span><strong>Clarifier</strong><small>le message et le parcours</small></div>
+      <div><span>03</span><strong>Concevoir</strong><small>une identité cohérente</small></div>
+      <div><span>04</span><strong>Développer</strong><small>une expérience fluide</small></div>
+    </section>
 
-    <script src="js/script.js"></script>
-  </body>
+    <section class="portfolio-section section-shell" id="realisations">
+      <div class="section-heading split reveal">
+        <div>
+          <span class="eyebrow">RÉALISATIONS</span>
+          <h2>Trois projets, trois univers et une même exigence.</h2>
+        </div>
+        <p>
+          Cette sélection présente à la fois des projets clients et un concept pédagogique.
+          Le rôle de chaque projet est indiqué clairement.
+        </p>
+      </div>
+
+      <div class="portfolio-list">
+        <article class="case-study reveal">
+          <a class="case-visual spotlight-card" href="https://vipvroom.com" target="_blank" rel="noopener noreferrer" aria-label="Voir le projet VIPVROOM">
+            <div class="case-browser">
+              <div class="case-browser-bar">
+                <div><span></span><span></span><span></span></div>
+                <small>vipvroom.com</small>
+              </div>
+              <div class="case-image-wrap">
+                <img src="images/vipvroom.png" alt="Aperçu du site VIPVROOM" />
+              </div>
+            </div>
+            <span class="case-cursor">Voir le site <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </a>
+
+          <div class="case-copy">
+            <div class="case-meta">
+              <span class="case-index">01</span>
+              <span class="case-status client">Projet client</span>
+            </div>
+            <p class="case-type">Site vitrine · VTC</p>
+            <h3>VIPVROOM</h3>
+            <p class="case-description">
+              Création et optimisation d’un site WordPress pour un service de chauffeur VTC.
+              L’objectif : moderniser l’image, faciliter la compréhension de l’offre et améliorer
+              la visibilité du service en ligne.
+            </p>
+
+            <div class="case-focus">
+              <span>Travail réalisé</span>
+              <ul>
+                <li>Restructuration de l’expérience utilisateur</li>
+                <li>Modernisation de l’interface</li>
+                <li>Optimisation SEO et responsive</li>
+              </ul>
+            </div>
+
+            <div class="case-tags">
+              <span>WordPress</span><span>Figma</span><span>SEO</span>
+            </div>
+
+            <a class="case-link" href="https://vipvroom.com" target="_blank" rel="noopener noreferrer">
+              Découvrir VIPVROOM <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="case-study reverse reveal">
+          <a class="case-visual spotlight-card" href="https://cediapsy.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Voir le projet Cédiapsy">
+            <div class="case-browser">
+              <div class="case-browser-bar">
+                <div><span></span><span></span><span></span></div>
+                <small>cediapsy.fr</small>
+              </div>
+              <div class="case-image-wrap">
+                <img src="images/cediapsy2.png" alt="Aperçu du site Cédiapsy" />
+              </div>
+            </div>
+            <span class="case-cursor">Voir le site <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </a>
+
+          <div class="case-copy">
+            <div class="case-meta">
+              <span class="case-index">02</span>
+              <span class="case-status client">Projet client</span>
+            </div>
+            <p class="case-type">Refonte UX/UI · Santé</p>
+            <h3>Cédiapsy</h3>
+            <p class="case-description">
+              Refonte complète d’un site spécialisé dans l’évaluation diagnostique et
+              l’accompagnement en santé mentale. Le travail a porté sur la confiance,
+              l’accessibilité, la lisibilité des services et la prise de rendez-vous.
+            </p>
+
+            <div class="case-focus">
+              <span>Travail réalisé</span>
+              <ul>
+                <li>Nouvelle architecture de l’information</li>
+                <li>Design rassurant et accessible</li>
+                <li>Développement responsive et interactions</li>
+              </ul>
+            </div>
+
+            <div class="case-tags">
+              <span>Figma</span><span>HTML/CSS</span><span>JavaScript</span><span>Vercel</span>
+            </div>
+
+            <a class="case-link" href="https://cediapsy.vercel.app/" target="_blank" rel="noopener noreferrer">
+              Découvrir Cédiapsy <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="case-study reveal">
+          <a class="case-visual spotlight-card" href="https://saint-joseph.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Voir le concept Lycée Saint-Joseph">
+            <div class="case-browser">
+              <div class="case-browser-bar">
+                <div><span></span><span></span><span></span></div>
+                <small>saint-joseph.vercel.app</small>
+              </div>
+              <div class="case-image-wrap">
+                <img src="images/lycee-saint-joseph.png" alt="Aperçu du concept Lycée Saint-Joseph" />
+              </div>
+            </div>
+            <span class="case-cursor">Voir le concept <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </a>
+
+          <div class="case-copy">
+            <div class="case-meta">
+              <span class="case-index">03</span>
+              <span class="case-status concept">Concept pédagogique</span>
+            </div>
+            <p class="case-type">Site institutionnel · Éducation</p>
+            <h3>Lycée Saint-Joseph</h3>
+            <p class="case-description">
+              Concept de refonte UX/UI réalisé dans un cadre pédagogique, sans commande
+              officielle de l’établissement. L’objectif était d’améliorer la lisibilité,
+              l’accessibilité et la hiérarchisation d’un site scolaire dense.
+            </p>
+
+            <div class="case-focus">
+              <span>Travail réalisé</span>
+              <ul>
+                <li>Simplification de la navigation</li>
+                <li>Hiérarchisation des contenus institutionnels</li>
+                <li>Conception d’une interface plus actuelle</li>
+              </ul>
+            </div>
+
+            <div class="case-tags">
+              <span>Figma</span><span>HTML/CSS</span><span>GitHub</span><span>Vercel</span>
+            </div>
+
+            <a class="case-link" href="https://saint-joseph.vercel.app/" target="_blank" rel="noopener noreferrer">
+              Découvrir le concept <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="project-method section-shell">
+      <div class="method-card reveal">
+        <div class="method-copy">
+          <span class="eyebrow">DERRIÈRE CHAQUE PROJET</span>
+          <h2>Le design n’est jamais décoratif.</h2>
+          <p>
+            Chaque écran doit aider le visiteur à comprendre, choisir ou agir.
+            C’est cette logique qui guide la structure, les textes, les interactions
+            et les choix visuels.
+          </p>
+          <a href="process.html" class="btn btn-light">
+            Découvrir le process
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="method-grid">
+          <div><i class="fa-solid fa-compass-drafting"></i><strong>Stratégie</strong><span>Objectifs, cible et message.</span></div>
+          <div><i class="fa-solid fa-pen-ruler"></i><strong>UX/UI</strong><span>Parcours clair et identité forte.</span></div>
+          <div><i class="fa-solid fa-code"></i><strong>Développement</strong><span>Responsive, fluide et propre.</span></div>
+          <div><i class="fa-solid fa-chart-line"></i><strong>Performance</strong><span>Visibilité, vitesse et conversion.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta section-shell reveal">
+      <div class="final-cta-inner">
+        <div>
+          <span class="eyebrow">VOTRE PROJET PEUT ÊTRE LE PROCHAIN</span>
+          <h2>Créons un site que vos clients auront envie d’explorer.</h2>
+        </div>
+        <a href="contact.html" class="btn btn-primary magnetic">
+          Démarrer mon projet
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a class="logo logo-wordmark footer-logo" href="index.html" aria-label="Accueil Yizio">
+    <img src="images/yizio_logo.png" alt="Yizio" class="logo-img">
+        </a>
+        <p>Sites web premium, pensés pour valoriser votre activité et convertir vos visiteurs.</p>
+      </div>
+
+      <div class="footer-column">
+        <strong>Navigation</strong>
+        <a href="offres.html">Offres</a>
+        <a href="projets.html">Projets</a>
+        <a href="process.html">Process</a>
+        <a href="apropos.html">À propos</a>
+      </div>
+
+      <div class="footer-column">
+        <strong>Contact</strong>
+        <a href="contact.html">Contact</a>
+        <a href="mailto:contact@yizio.fr">contact@yizio.fr</a>
+      </div>
+
+      <div class="footer-column">
+        <strong>Informations</strong>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="politique-confidentialite.html">Confidentialité</a>
+        <a href="gestion-cookies.html">Gestion des cookies</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Yizio — Fabien Verhulst. Tous droits réservés.</p>
+      <span>Conçu avec exigence en France.</span>
+    </div>
+  </footer>
+</body>
 </html>

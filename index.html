@@ -3,458 +3,474 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yizio | UX UI Designer & Développeur Web</title>
-  <meta name="description" content=" Yizio, agence de création digitale fondé par Fabien Verhulst. Expertise en UX/UI Design, développement web et direction artistique éditoriale.">
+
+  <title>Yizio | Création de sites web premium</title>
+  <meta
+    name="description"
+    content="Yizio imagine et développe des sites web premium, modernes et performants pour les entreprises qui veulent renforcer leur image et convertir davantage de visiteurs."
+  />
   <link rel="canonical" href="https://yizio.fr/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
   <link rel="stylesheet" href="css/accueil.css" />
-  <link rel="stylesheet" href="css/navbar.css" />
-      
   <script src="js/script.js" defer></script>
 
-
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18133673896"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-18133673896');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18133673896"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18133673896');
+  </script>
 </head>
 
-  <body>
-    <div class="grid-bg"></div>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
 
-<header class="navbar">
-<div class="logo">
-    <a href="index.html">
-      <img src="images/yizio (2).png" alt="Yizio Logo">
+  <header class="navbar" id="navbar">
+    <a class="logo logo-wordmark" href="index.html" aria-label="Accueil Yizio">
+    <img src="images/yizio_logo.png" alt="Yizio" class="logo-img">
     </a>
-  </div>
-  <nav>
-    <a href="index.html">Accueil</a>
-    <a href="offres.html">Offres</a>
-    <a href="projets.html">Projets</a>
-    <a href="process.html">Process</a>
-    <a href="competences.html">Compétences</a>
-    <a href="apropos.html">À propos</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <div class="menu-btn">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</header>
 
-    <section class="hero">
-      <div class="glow"></div>
+    <nav aria-label="Navigation principale">
+      <a class="active" href="index.html" aria-current="page">Accueil</a>
+      <a href="offres.html">Offres</a>
+      <a href="projets.html">Projets</a>
+      <a href="process.html">Process</a>
+      <a href="competences.html">Compétences</a>
+      <a href="apropos.html">À propos</a>
+    </nav>
 
-      <div class="hero-content">
-        <span class="badge">Accueil</span>
+    <a class="nav-cta magnetic" href="contact.html">
+      Contact
+      <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </a>
+
+    <button class="menu-btn" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-decoration hero-decoration-one"></div>
+      <div class="hero-decoration hero-decoration-two"></div>
+
+      <div class="hero-content reveal">
+        <div class="availability-pill">
+          <span></span>
+          Disponible pour de nouveaux projets
+        </div>
 
         <h1>
-          Je crée des sites web
-          <span class="accent">sur-mesure</span><br />
-          pour marques ambitieuses
+          Votre site ne doit pas seulement être beau.
+          <span>Il doit donner envie de vous choisir.</span>
         </h1>
 
         <p>
-          Maquettes Figma, identité visuelle et sites WordPress livrés clé en
-          main. Du concept à la mise en ligne, je transforme votre vision en
-          expérience digitale.
+          Yizio conçoit des expériences web sur mesure qui renforcent votre image,
+          rassurent vos prospects et transforment davantage de visites en demandes de contact.
         </p>
 
-        <div class="hero-buttons">
-          <a href="#contact" class="btn-primary">Discutons de votre projet</a>
-          <a href="#projets" class="btn-secondary">Voir mes projets</a>        </div>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn btn-primary magnetic">
+            Parler de mon projet
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="projets.html" class="btn btn-secondary">
+            Découvrir les réalisations
+            <i class="fa-solid fa-arrow-down"></i>
+          </a>
+        </div>
+
+        <div class="hero-trust">
+          <div>
+            <strong>100 %</strong>
+            <span>sur mesure</span>
+          </div>
+          <div>
+            <strong>Design + code</strong>
+            <span>un interlocuteur unique</span>
+          </div>
+          <div>
+            <strong>Responsive</strong>
+            <span>pensé pour tous les écrans</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" data-delay="150">
+        <div class="browser-card tilt-card">
+          <div class="browser-topbar">
+            <div class="browser-dots"><span></span><span></span><span></span></div>
+            <div class="browser-url">yizio.fr</div>
+            <span class="browser-secure"><i class="fa-solid fa-lock"></i></span>
+          </div>
+          <div class="browser-screen">
+            <img src="images/cediapsy2.png" alt="Aperçu d'une réalisation Yizio" />
+          </div>
+        </div>
+
+        <div class="floating-card floating-card-one">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <span>Design premium</span>
+        </div>
+
+        <div class="floating-card floating-card-two">
+          <div class="mini-chart"><span></span><span></span><span></span><span></span></div>
+          <div>
+            <strong>Plus convaincant</strong>
+            <span>Une image qui inspire confiance</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="services" id="services">
-      <span class="section-tag">CE QUE JE PROPOSE</span>
-      <h2>Des solutions design complètes pour votre marque</h2>
-      <p class="section-desc">
-        De la conception visuelle à la mise en ligne, chaque étape est pensée
-        pour donner vie à votre vision.
-      </p>
+    <section class="marquee" aria-label="Expertises Yizio">
+      <div class="marquee-track">
+        <span>Création de sites</span><i></i>
+        <span>Refonte web</span><i></i>
+        <span>UX / UI Design</span><i></i>
+        <span>Identité visuelle</span><i></i>
+        <span>SEO</span><i></i>
+        <span>Responsive design</span><i></i>
+        <span>Création de sites</span><i></i>
+        <span>Refonte web</span><i></i>
+        <span>UX / UI Design</span><i></i>
+        <span>Identité visuelle</span><i></i>
+      </div>
+    </section>
+
+    <section class="problem-section section-shell">
+      <div class="section-heading reveal">
+        <span class="eyebrow">UN SITE QUI TRAVAILLE POUR VOUS</span>
+        <h2>Un beau site attire l’œil. Un bon site déclenche une décision.</h2>
+        <p>
+          Chaque choix de design, de contenu et d’interaction doit servir un objectif :
+          rassurer, expliquer et faire passer votre visiteur à l’action.
+        </p>
+      </div>
+
+      <div class="transformation-grid">
+        <article class="transformation-card before reveal">
+          <span class="card-label">Avant</span>
+          <h3>Un site qui freine la confiance</h3>
+          <ul>
+            <li><i class="fa-solid fa-xmark"></i> Image datée ou peu professionnelle</li>
+            <li><i class="fa-solid fa-xmark"></i> Message difficile à comprendre</li>
+            <li><i class="fa-solid fa-xmark"></i> Navigation peu intuitive</li>
+            <li><i class="fa-solid fa-xmark"></i> Peu de demandes de contact</li>
+          </ul>
+        </article>
+
+        <div class="transformation-arrow reveal" aria-hidden="true">
+          <i class="fa-solid fa-arrow-right-long"></i>
+        </div>
+
+        <article class="transformation-card after reveal">
+          <span class="card-label">Avec Yizio</span>
+          <h3>Une expérience qui donne envie d’avancer</h3>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Positionnement immédiatement compris</li>
+            <li><i class="fa-solid fa-check"></i> Design premium et cohérent</li>
+            <li><i class="fa-solid fa-check"></i> Parcours fluide sur tous les écrans</li>
+            <li><i class="fa-solid fa-check"></i> Appels à l’action mieux placés</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="services section-shell" id="services">
+      <div class="section-heading split reveal">
+        <div>
+          <span class="eyebrow">NOS EXPERTISES</span>
+          <h2>Tout ce qu’il faut pour construire une présence digitale forte.</h2>
+        </div>
+        <p>
+          Du premier concept à la mise en ligne, Yizio prend en charge l’ensemble de votre projet
+          avec une approche à la fois créative, stratégique et technique.
+        </p>
+      </div>
 
       <div class="services-grid">
-        <div class="card">
-          <div class="icon"></div>
+        <article class="service-card spotlight-card reveal">
+          <div class="service-number">01</div>
+          <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3>Création de site vitrine</h3>
+          <p>Un site unique, clair et performant, conçu autour de votre activité et de vos objectifs.</p>
+          <a href="offres.html">Découvrir l’offre <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <article class="service-card spotlight-card reveal" data-delay="80">
+          <div class="service-number">02</div>
+          <div class="service-icon"><i class="fa-solid fa-rotate"></i></div>
+          <h3>Refonte UX / UI</h3>
+          <p>Une transformation complète de votre site pour moderniser votre image et améliorer le parcours utilisateur.</p>
+          <a href="offres.html">Découvrir l’offre <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <article class="service-card spotlight-card reveal" data-delay="160">
+          <div class="service-number">03</div>
+          <div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
           <h3>Identité visuelle</h3>
-          <p>Création d’une identité forte et mémorable.</p>
+          <p>Une direction artistique cohérente et mémorable pour faire reconnaître votre marque au premier regard.</p>
+          <a href="offres.html">Découvrir l’offre <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <article class="service-card spotlight-card reveal" data-delay="240">
+          <div class="service-number">04</div>
+          <div class="service-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+          <h3>SEO et performance</h3>
+          <p>Une base technique propre, des pages rapides et une structure pensée pour être mieux comprise par Google.</p>
+          <a href="offres.html">Découvrir l’offre <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects section-shell" id="projets">
+      <div class="section-heading split reveal">
+        <div>
+          <span class="eyebrow">RÉALISATIONS</span>
+          <h2>Des projets pensés pour marquer les esprits.</h2>
         </div>
-        <div class="card">
-          <div class="icon"></div>
-          <h3>Maquettes Figma</h3>
-          <p>Wireframes et prototypes haute fidélité.</p>
+        <a class="text-link" href="projets.html">
+          Voir tous les projets <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="project-list">
+        <article class="project-row reveal">
+          <a class="project-preview" href="https://vipvroom.com" target="_blank" rel="noopener">
+            <img src="images/vipvroom2.png" alt="Site VIPVROOM réalisé par Yizio" />
+            <span class="project-hover-label">Voir le projet</span>
+          </a>
+          <div class="project-info">
+            <span>01 — SITE VITRINE</span>
+            <h3>VIPVROOM</h3>
+            <p>
+              Une expérience premium et directe pour un service de chauffeur privé,
+              avec une navigation claire et une image plus haut de gamme.
+            </p>
+            <div class="project-tags"><span>WordPress</span><span>UX/UI</span><span>SEO</span></div>
+          </div>
+        </article>
+
+        <article class="project-row reverse reveal">
+          <a class="project-preview" href="https://cediapsy.vercel.app/" target="_blank" rel="noopener">
+            <img src="images/cediapsy2.png" alt="Site CÉDIAPSY réalisé par Yizio" />
+            <span class="project-hover-label">Voir le projet</span>
+          </a>
+          <div class="project-info">
+            <span>02 — REFONTE COMPLÈTE</span>
+            <h3>CÉDIAPSY</h3>
+            <p>
+              Une refonte rassurante, structurée et accessible pour mieux présenter
+              les spécialités du cabinet et simplifier la prise de rendez-vous.
+            </p>
+            <div class="project-tags"><span>HTML/CSS</span><span>UX/UI</span><span>Responsive</span></div>
+          </div>
+        </article>
+
+        <article class="project-row reveal">
+          <a class="project-preview" href="https://saint-joseph.vercel.app/" target="_blank" rel="noopener">
+            <img src="images/lycee-saint-joseph3.png" alt="Concept de site Lycée Saint-Joseph" />
+            <span class="project-hover-label">Voir le concept</span>
+          </a>
+          <div class="project-info">
+            <span>03 — CONCEPT UX/UI</span>
+            <h3>Lycée Saint-Joseph</h3>
+            <p>
+              Un concept de refonte institutionnelle imaginé pour améliorer la lisibilité,
+              hiérarchiser les informations et moderniser l’image de l’établissement.
+            </p>
+            <div class="project-tags"><span>Figma</span><span>HTML/CSS</span><span>Concept</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="method section-shell" id="methode">
+      <div class="method-layout">
+        <div class="method-intro reveal">
+          <span class="eyebrow">UNE MÉTHODE SIMPLE</span>
+          <h2>Un projet cadré, fluide et transparent.</h2>
+          <p>
+            Vous savez toujours où en est votre projet, ce qui est en cours et quelle est la prochaine étape.
+          </p>
+          <a href="process.html" class="btn btn-dark">Découvrir notre méthode <i class="fa-solid fa-arrow-right"></i></a>
         </div>
-        <div class="card">
-          <div class="icon"></div>
-          <h3>Création WordPress</h3>
-          <p>Sites administrables et performants.</p>
-        </div>
-        <div class="card">
-          <div class="icon"></div>
-          <h3>Intégration HTML/CSS</h3>
-          <p>Code responsive et optimisé.</p>
-        </div>
-        <div class="card">
-          <div class="icon"></div>
-          <h3>Refonte de site</h3>
-          <p>Modernisation UX & UI.</p>
-        </div>
-        <div class="card">
-          <div class="icon"></div>
-          <h3>Optimisation SEO</h3>
-          <p>Meilleure visibilité sur Google.</p>
+
+        <div class="method-steps">
+          <article class="method-step active reveal">
+            <span>01</span>
+            <div>
+              <h3>Découverte</h3>
+              <p>Nous clarifions votre activité, vos objectifs, vos clients et les résultats attendus.</p>
+            </div>
+          </article>
+          <article class="method-step reveal">
+            <span>02</span>
+            <div>
+              <h3>Direction créative</h3>
+              <p>Nous définissons la structure, l’univers visuel et les interactions qui donneront vie au projet.</p>
+            </div>
+          </article>
+          <article class="method-step reveal">
+            <span>03</span>
+            <div>
+              <h3>Conception et développement</h3>
+              <p>Le site est conçu, développé et optimisé pour offrir une expérience fluide sur tous les appareils.</p>
+            </div>
+          </article>
+          <article class="method-step reveal">
+            <span>04</span>
+            <div>
+              <h3>Mise en ligne</h3>
+              <p>Après les derniers ajustements, votre site est publié et vous êtes accompagné dans sa prise en main.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-<section class="projects" id="projets">
-  <span class="section-tag">PROJETS</span>
-  <h2>Cas clients sélectionnés</h2>
-  <div class="projects-slider">
-    
-    <div class="project-card">
-      <div class="project-image">
-        <img src="images/vipvroom2.png" alt="Projet VIPVROOM - Yizio" />
-      </div>
-      <div class="project-content">
-        <h3>VIPVROOM</h3>
-        <p class="project-category">Site vitrine</p>
-        <p class="project-desc">
-          Création et optimisation d’un site WordPress pour VIP VROOM, service de chauffeur VTC. Amélioration de l’UX, design moderne et optimisation SEO.
-        </p>
-        <div class="project-tags">
-          <span>WordPress</span>
-          <span>Figma</span>
-          <span>SEO</span>
+    <section class="agency section-shell" id="agence">
+      <div class="agency-card reveal">
+        <div class="agency-photo">
+          <img src="images/fabien.png" alt="Fabien Verhulst, fondateur de Yizio" />
+          <div class="agency-photo-badge">
+            <strong>Yizio</strong>
+            <span>Studio web indépendant</span>
+          </div>
         </div>
-        <a href="https://vipvroom.com" target="_blank">
-          <button class="project-btn">Voir le projet</button>
-        </a>
-      </div>
-    </div>
 
-    <div class="project-card">
-      <div class="project-image">
-        <img src="images/cediapsy2.png" alt="Projet Cediapsy - Yizio" />
-      </div>
-      <div class="project-content">
-        <h3>Cediapsy</h3>
-        <p class="project-category">Refonte UX</p>
-        <p class="project-desc">
-          Refonte d’un site d’accompagnement psychologique avec un focus sur la confiance, l’accessibilité et la lisibilité des services.
-        </p>
-        <div class="project-tags">
-          <span>Figma</span>
-          <span>UX</span>
-          <span>UI</span>
-        </div>
-        <a href="https://cediapsy.vercel.app/" target="_blank">
-          <button class="project-btn">Voir le projet</button>
-        </a>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <div class="project-image">
-        <img src="images/lycee-saint-joseph3.png" alt="Projet Lycée Saint-Joseph - Yizio" />
-      </div>
-      <div class="project-content">
-        <h3>Lycée Saint-Joseph</h3>
-        <p class="project-category">Projet concept / site institutionnel</p>
-        <p class="project-desc">
-          Refonte UX/UI d’un site pour un établissement scolaire. Projet test non officiel réalisé dans un cadre pédagogique afin d’améliorer la lisibilité, l’accessibilité et la hiérarchisation des informations.
-        </p>
-        <div class="project-tags">
-          <span>Figma</span>
-          <span>VS Code</span>
-          <span>Vercel</span>
-
-        </div>
-        <a href="https://saint-joseph.vercel.app/">
-          <button class="project-btn">Voir le projet</button>
-        </a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-    <section class="process" id="process">
-      <span class="section-tag">MA MÉTHODE</span>
-      <h2>Un process clair, du brief à la mise en ligne</h2>
-
-      <div class="timeline">
-        <div class="step">
-          <span>01</span>
-          <h3>Échange</h3>
+        <div class="agency-content">
+          <span class="eyebrow">L’AGENCE</span>
+          <h2>Un accompagnement humain, sans intermédiaire inutile.</h2>
           <p>
-            On discute de votre projet, vos besoins et vos objectifs pour
-            définir ensemble la direction à prendre.
+            Je suis Fabien, fondateur de Yizio. J’accompagne les entreprises dans la création
+            d’une présence en ligne plus forte, plus moderne et plus convaincante.
           </p>
-        </div>
-        <div class="step">
-          <span>02</span>
-          <h3>Maquette</h3>
           <p>
-            Je crée les maquettes dans Figma avec l’identité visuelle, la
-            structure et les interactions clés.
+            Vous échangez directement avec la personne qui imagine, conçoit et développe votre site.
+            Cela permet d’aller plus vite, de rester cohérent et de construire une solution réellement adaptée.
           </p>
-        </div>
-        <div class="step">
-          <span>03</span>
-          <h3>Validation</h3>
-          <p>
-            Nous revoyons ensemble le design. Ajustements et itérations jusqu’à
-            votre satisfaction complète.
-          </p>
-        </div>
-        <div class="step">
-          <span>04</span>
-          <h3>Développement</h3>
-          <p>
-            Intégration responsive, micro-animations et mise en place du CMS.
-            Chaque détail est soigné.
-          </p>
-        </div>
-        <div class="step">
-          <span>05</span>
-          <h3>Livraison</h3>
-          <p>
-            Déploiement, formation et accompagnement. Votre site est en ligne,
-            prêt à performer.
-          </p>
+          <a href="apropos.html" class="text-link">Découvrir Yizio <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
     </section>
 
-    <div class="skills-wrapper" id="skills">
-      <div class="skill-col">
-            <h3>Design</h3>
-            <div class="skill">
-          <div class="skill-top">
-            <span>Figma</span>
-            <span class="percent">95%</span>
-          </div>
-          <div class="bar">
-            <div class="fill" data-width="95%"></div>
-          </div>
-        </div>
-    
-        <div class="skill">
-          <div class="skill-top">
-            <span>Photoshop</span>
-            <span class="percent">85%</span>
-          </div>
-          <div class="bar">
-            <div class="fill" data-width="85%"></div>
-          </div>
-        </div>
-    
-        <div class="skill">
-          <div class="skill-top">
-            <span>Illustrator</span>
-            <span class="percent">80%</span>
-          </div>
-          <div class="bar">
-            <div class="fill" data-width="80%"></div>
-          </div>
-        </div>
-    
-        <div class="skill">
-          <div class="skill-top">
-            <span>InDesign</span>
-            <span class="percent">80%</span>
-          </div>
-          <div class="bar">
-            <div class="fill" data-width="80%"></div>
-          </div>
-        </div>
-    
-        <div class="skill">
-          <div class="skill-top">
-            <span>UI Design</span>
-            <span class="percent">90%</span>
-          </div>
-          <div class="bar">
-            <div class="fill" data-width="90%"></div>
-          </div>
-        </div>
-    
-        <div class="skill">
-          <div class="skill-top">
-            <span>UX Design</span>
-            <span class="percent">90%</span>
-          </div>
-          <div class="bar">
-            <div class="fill" data-width="90%"></div>
-          </div>
-        </div>
-    
+    <section class="faq section-shell" id="faq">
+      <div class="section-heading reveal">
+        <span class="eyebrow">QUESTIONS FRÉQUENTES</span>
+        <h2>Tout ce que vous devez savoir avant de démarrer.</h2>
       </div>
-    
-    
-      <div class="skill-col">
-          <h3>Technique</h3>
-            <div class="skill">
-          <div class="skill-top">
-            <span>HTML / CSS</span>
-            <span class="percent">95%</span>
-          </div>
-          <div class="bar">
-            <div class="fill" data-width="95%"></div>
-          </div>
-        </div>
-    
-        <div class="skill">
-          <div class="skill-top">
-            <span>WordPress</span>
-            <span class="percent">90%</span>
-          </div>
-          <div class="bar">
-            <div class="fill" data-width="90%"></div>
-          </div>
-        </div>
-    
-        <div class="skill">
-          <div class="skill-top">
-            <span>Webflow</span>
-            <span class="percent">75%</span>
-          </div>
-          <div class="bar">
-            <div class="fill" data-width="85%"></div>
-          </div>
-        </div>
-    
-        <div class="skill">
-          <div class="skill-top">
-            <span>Responsive Design</span>
-            <span class="percent">95%</span>
-          </div>
-          <div class="bar">
-            <div class="fill" data-width="95%"></div>
-          </div>
-        </div>
-    
-        <div class="skill">
-          <div class="skill-top">
-            <span>VS Code</span>
-            <span class="percent">100%</span>
-          </div>
-          <div class="bar">
-            <div class="fill" data-width="100%"></div>
-          </div>
-        </div>
-    
-        <div class="skill">
-          <div class="skill-top">
-            <span>Trello</span>
-            <span class="percent">100%</span>
-          </div>
-          <div class="bar">
-            <div class="fill" data-width="100%"></div>
-          </div>
-        </div>
-          </div>
-        </div>
 
-    <section class="about" id="about">
-        <div class="about-visual">
-  <img src="images/fabien.png" alt="Photo Fabien Verhulst" class="profile-pic" />
-</div>
+      <div class="faq-list">
+        <article class="faq-item reveal">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Combien coûte la création d’un site internet ?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Le tarif dépend du nombre de pages, du niveau de personnalisation et des fonctionnalités nécessaires. Un devis précis est proposé après un premier échange.</p>
+          </div>
+        </article>
 
-      
+        <article class="faq-item reveal">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Combien de temps faut-il pour créer un site ?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>La durée varie selon la complexité du projet. Un site vitrine peut généralement être conçu en quelques semaines lorsque les contenus et retours sont transmis rapidement.</p>
+          </div>
+        </article>
 
-      <div class="about-content">
-        <span class="section-tag">À PROPOS</span>
-        <h2>Web Designer orienté intégration</h2>
-        <p>
-          Formée à la Wild Code School, je suis passionnée par la création d'expériences web qui allient esthétique et fonctionnalité. Mon approche combine la rigueur du design system avec la créativité de la direction artistique.
-Mon profil hybride design et technique me permet de concevoir des maquettes dans Figma, de créer des identités visuelles percutantes et d'intégrer le tout en code propre et réactif.
-Chaque projet est une opportunité de raconter une histoire, celle de votre marque, à travers un site web qui vous ressemble et vous permet de performer
-        </p>
-			</div>
+        <article class="faq-item reveal">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Est-ce que mon site sera adapté aux téléphones ?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Oui. Chaque site Yizio est conçu pour offrir une navigation fluide sur ordinateur, tablette et mobile.</p>
+          </div>
+        </article>
+
+        <article class="faq-item reveal">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Puis-je modifier mon site après sa mise en ligne ?</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Oui. Selon la solution retenue, vous pourrez gérer certains contenus vous-même ou confier les modifications et la maintenance à Yizio.</p>
+          </div>
+        </article>
+      </div>
     </section>
 
-<section class="contact" id="contact">
-  <span class="section-tag">CONTACT</span>
-  <h2>Discutons de votre projet</h2>
+    <section class="final-cta section-shell reveal">
+      <div class="final-cta-inner">
+        <div>
+          <span class="eyebrow">VOTRE PROJET MÉRITE MIEUX QU’UN SITE ORDINAIRE</span>
+          <h2>Créons une expérience qui donne envie de travailler avec vous.</h2>
+        </div>
+        <a href="contact.html" class="btn btn-light magnetic">
+          Démarrer mon projet
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </section>
+  </main>
 
-  <div class="contact-wrapper">
-    
-    <div class="contact-info">
-      <p>contact@yizio.fr</p>
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a class="logo logo-wordmark footer-logo" href="index.html" aria-label="Accueil Yizio">
+    <img src="images/yizio_logo.png" alt="Yizio" class="logo-img">
+        </a>
+        <p>Sites web premium, pensés pour valoriser votre activité et convertir vos visiteurs.</p>
+      </div>
+
+      <div class="footer-column">
+        <strong>Navigation</strong>
+        <a href="offres.html">Offres</a>
+        <a href="projets.html">Projets</a>
+        <a href="process.html">Process</a>
+        <a href="apropos.html">À propos</a>
+      </div>
+
+      <div class="footer-column">
+        <strong>Contact</strong>
+        <a href="contact.html">Contact</a>
+        <a href="mailto:contact@yizio.fr">contact@yizio.fr</a>
+      </div>
+
+      <div class="footer-column">
+        <strong>Informations</strong>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="politique-confidentialite.html">Confidentialité</a>
+        <a href="gestion-cookies.html">Gestion des cookies</a>
+      </div>
     </div>
 
-    <form id="contact-form" class="contact-form">
-
-      <div class="form-group">
-        <label style="display:block; text-align:left; font-size:13px; color:#aaa; margin-bottom:8px;">
-          Nom
-        </label>
-        <input type="text" name="name" placeholder="Jacques Michel" required />
-      </div>
-
-      <div class="form-group">
-        <label style="display:block; text-align:left; font-size:13px; color:#aaa; margin-bottom:8px;">
-          Email
-        </label>
-        <input type="email" name="email" placeholder="jacques.michel@gmail.com" required />
-      </div>
-
-      <div class="form-group">
-        <label style="display:block; text-align:left; font-size:13px; color:#aaa; margin-bottom:8px;">
-          Formule souhaitée
-        </label>
-        <select name="project_type" id="project_type" required>
-          <option value="">Sélectionnez une option</option>
-          <option value="Pack Essentiel (590€)">Pack Essentiel (590 euros)</option>
-          <option value="Pack Business (990€)">Pack Business (990 euros)</option>
-          <option value="Pack Premium (1390€)">Pack Premium (1390 euros)</option>
-          <option value="Autre demande">Autre demande</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label style="display:block; text-align:left; font-size:13px; color:#aaa; margin-bottom:8px;">
-          Option Maintenance (25€/mois)
-        </label>
-        <select name="maintenance" id="maintenance" required>
-          <option value="OUI">Oui</option>
-          <option value="NON">Non</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label style="display:block; text-align:left; font-size:13px; color:#aaa; margin-bottom:8px;">
-          Message
-        </label>
-        <textarea name="message" placeholder="Décrivez votre projet en quelques lignes..." rows="5" required></textarea>
-      </div>
-
-      <button class="btn-primary" type="submit">
-        Envoyer la demande
-      </button>
-
-      <p class="form-message"></p>
-    </form>
-  </div>
-</section>
-
-<!-- EmailJS -->
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-    <footer>
-      <p>© 2026 Fabien Verhulst. Tous droits réservés.</p>
-      <a href="mentions-legales.html">Mentions Légales</a>
-<a href="politique-confidentialite.html">Politique de Confidentialité</a>
-<a href="gestion-cookies.html">Gestion des Cookies</a>
-    </footer>
-  </body>
+    <div class="footer-bottom">
+      <p>© 2026 Yizio — Fabien Verhulst. Tous droits réservés.</p>
+      <span>Conçu avec exigence en France.</span>
+    </div>
+  </footer>
+</body>
 </html>
