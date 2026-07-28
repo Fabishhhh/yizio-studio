@@ -513,53 +513,58 @@ button { border: 0; }
 ========================================================= */
 
 .hero-reassurance {
-  max-width: 980px;
-  margin: 80px auto 0;
-  padding-top: 35px;
+  max-width: 1180px;
+  margin: 95px auto 0;
+  padding-top: 45px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 35px;
+  gap: 0;
   border-top: 1px solid var(--line);
 }
 
 .hero-reassurance > div {
   position: relative;
-  padding: 5px 24px;
-  text-align: center;
+  min-height: 220px;
+  padding: 34px 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
 }
 
 .hero-reassurance > div:not(:last-child)::after {
   content: "";
   position: absolute;
-  top: 5px;
+  top: 28px;
   right: 0;
   width: 1px;
-  height: calc(100% - 10px);
+  height: calc(100% - 56px);
   background: var(--line);
 }
 
 .reassurance-number {
   display: block;
-  margin-bottom: 9px;
+  margin-bottom: 22px;
   color: var(--primary);
-  font-size: 0.7rem;
+  font-size: 0.78rem;
   font-weight: 800;
-  letter-spacing: 0.13em;
+  letter-spacing: 0.16em;
 }
 
 .hero-reassurance strong {
   display: block;
-  color: var(--dark);
   font-family: "Manrope", sans-serif;
-  font-size: 0.96rem;
+  font-size: clamp(1.25rem, 1.8vw, 1.6rem);
+  line-height: 1.2;
+  letter-spacing: -0.03em;
 }
 
 .hero-reassurance p {
-  max-width: 250px;
-  margin: 7px auto 0;
+  max-width: 310px;
+  margin-top: 16px;
   color: var(--muted);
-  font-size: 0.78rem;
-  line-height: 1.6;
+  font-size: 0.98rem;
+  line-height: 1.75;
 }
 .intro-band { max-width:1180px; margin:0 auto; padding:42px 24px; text-align:center; border-bottom:1px solid var(--line); }.intro-band p{color:var(--muted)}.intro-band strong{display:block;margin-top:4px;font-family:"Manrope",sans-serif;font-size:clamp(1.15rem,2vw,1.45rem)}
 .expertises-section,.capabilities-section,.tools-section,.soft-skills-section { padding:130px max(6vw,24px); }

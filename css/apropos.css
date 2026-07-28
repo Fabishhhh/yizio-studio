@@ -764,10 +764,12 @@ img {
 /* VALUES */
 
 .section-intro {
+  max-width: 760px;
+  margin-bottom: 60px;
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 80px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .section-intro > div {
@@ -775,9 +777,10 @@ img {
 }
 
 .section-intro > p {
-  max-width: 430px;
+  max-width: 680px;
   color: var(--muted);
-  line-height: 1.75;
+  font-size: 1.05rem;
+  line-height: 1.7;
 }
 
 .values-grid {
