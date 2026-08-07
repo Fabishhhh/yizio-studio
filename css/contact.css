@@ -1189,6 +1189,32 @@ textarea:focus {
   padding-inline: 55px;
 }
 
+  .container {
+    width: min(calc(100% - 30px), var(--container));
+  }
+
+  .section-padding {
+    padding: 85px 0;
+  }
+
+  .navbar {
+    top: 10px;
+    width: calc(100% - 20px);
+    padding-left: 18px;
+  }
+
+  .contact-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .contact-sidebar,
+  .form-panel {
+    width: 100%;
+    max-width: 100%;
+  }
+
 .note-one {
   right: 0;
 }
