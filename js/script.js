@@ -193,34 +193,40 @@
         if (offers[offre]) projectSelect.value = offers[offre];
       }
 
-      const submitButton = formContactPage.querySelector(".btn-primary");
-      const formMessage = formContactPage.querySelector(".form-message");
+const submitButton = formContactPage.querySelector(".submit-btn");
+const formMessage = formContactPage.querySelector(".form-message");
 
-      formContactPage.addEventListener("submit", function (event) {
-        event.preventDefault();
+formContactPage.addEventListener("submit", function (event) {
+  event.preventDefault();
 
-        if (submitButton) {
-          submitButton.textContent = "Envoi en cours...";
-          submitButton.disabled = true;
-        }
+  if (submitButton) {
+    submitButton.disabled = true;
+    submitButton.querySelector("span:first-child").textContent =
+      "Envoi en cours...";
+  }
 
-        emailjs
-          .sendForm(SERVICE_ID, TEMPLATE_ID, this, PUBLIC_KEY)
-          .then(() => {
-            window.location.href = "merci.html";
-          })
-          .catch((error) => {
-            if (submitButton) {
-              submitButton.textContent = "Envoyer la demande";
-              submitButton.disabled = false;
-            }
-            if (formMessage) {
-              formMessage.style.color = "#dc2626";
-              formMessage.textContent = "Une erreur est survenue, veuillez réessayer.";
-            }
-            console.error(error);
-          });
-      });
+  emailjs
+    .sendForm(SERVICE_ID, TEMPLATE_ID, formContactPage, PUBLIC_KEY)
+    .then(() => {
+      window.location.href = "merci.html";
+    })
+    .catch((error) => {
+      console.error("Erreur EmailJS :", error);
+
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.querySelector("span:first-child").textContent =
+          "Envoyer ma demande";
+      }
+
+      if (formMessage) {
+        formMessage.style.color = "#dc2626";
+        formMessage.textContent =
+          "Une erreur est survenue. Veuillez réessayer.";
+      }
+    });
+});
+
     }
   });
 })();
