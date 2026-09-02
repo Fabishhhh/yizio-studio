@@ -81,8 +81,6 @@ button { font: inherit; border: 0; }
   color: #111827;
   line-height: 1;
 }
-.logo-wordmark strong { color: #ffbd1a; font-weight: 800; }
-.logo-wordmark span:last-child { letter-spacing: -0.06em; }
 
 .navbar nav { display: flex; align-items: center; gap: 28px; }
 .navbar nav a {
@@ -327,17 +325,6 @@ button { font: inherit; border: 0; }
   box-shadow: var(--shadow-sm);
 }
 
-.trust-strip {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-  background: #fff;
-}
-.trust-strip div { min-height: 86px; display: flex; align-items: center; justify-content: center; gap: 10px; border-right: 1px solid var(--line); font-weight: 700; color: #334155; }
-.trust-strip div:last-child { border-right: 0; }
-.trust-strip i { color: var(--primary); }
-
 .section-shell {   
   width: min(1280px, calc(100% - 48px));
   margin: 0 auto;
@@ -536,19 +523,10 @@ td i { color: var(--success); }
   padding-top: 155px;
 }
 
-.offers-showcase {
-  padding-inline: 85px;
-}
-
-  .trust-strip { grid-template-columns: repeat(3,1fr); }
-  .trust-strip div:nth-child(3) { border-right:0; }
-  .trust-strip div:nth-child(n+4) { border-top:1px solid var(--line); }
   .pricing-grid { grid-template-columns: 1fr 1fr; }
   .pricing-card.featured { transform:none; }
   .pricing-card:last-child { grid-column: 1 / -1; max-width: calc(50% - 12px); justify-self:center; }
   .serenity-card { align-items:flex-start; }
-  .faq-layout { grid-template-columns:1fr; gap:50px; }
-  .faq-intro { position:static; max-width:700px; }
 }
 
 @media (max-width: 768px) {
@@ -579,11 +557,6 @@ td i { color: var(--success); }
   width: 100%;
 }
 
-  .trust-strip { grid-template-columns:1fr 1fr; }
-  .trust-strip div { min-height:72px; border-bottom:1px solid var(--line); }
-  .trust-strip div:nth-child(2n) { border-right:0; }
-  .trust-strip div:nth-child(3) { border-right:1px solid var(--line); }
-  .trust-strip div:last-child { grid-column:1 / -1; border-bottom:0; }
   .section-shell { padding:90px 20px; }
   .section-heading.split { grid-template-columns:1fr; gap:20px; }
   .pricing-grid { grid-template-columns:1fr; }
@@ -613,7 +586,6 @@ td i { color: var(--success); }
 }
   .pricing-card { padding:28px 22px; }
   .popular-badge { position:static; display:inline-flex; margin-bottom:18px; }
-  .faq-answer > div { padding-right:0; }
 }
 
 @media (prefers-reduced-motion: reduce) {

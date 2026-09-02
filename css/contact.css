@@ -124,22 +124,9 @@ button {
   box-shadow: 0 16px 50px rgba(28, 34, 51, 0.13);
 }
 
-.brand,
 .footer-brand {
   text-decoration: none;
   letter-spacing: -0.08em;
-}
-
-.brand-word {
-  font-family: "Manrope", sans-serif;
-  font-size: 30px;
-  font-weight: 800;
-  color: #111318;
-}
-
-.brand-word span,
-.footer-brand span {
-  color: var(--yellow-dark);
 }
 
 .nav-links {
@@ -735,7 +722,7 @@ textarea:focus {
 .footer-column { display: flex; flex-direction: column; align-items: flex-start; gap: 11px; }
 .footer-column strong { margin-bottom: 5px; font-family: "Manrope", sans-serif; }
 .footer-column a { color: var(--muted); font-size: .9rem; transition: color .2s ease; text-decoration: none }
-.footer-column a:hover { color: var(--primary); }
+.footer-column a:hover {   color: var(--yellow-dark); }
 .footer-bottom { max-width: 1240px; margin: 60px auto 0; padding-top: 24px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 20px; color: #8490a3; font-size: .82rem; }
 /* INTERACTIONS */
 
@@ -774,23 +761,6 @@ textarea:focus {
   .nav-links {
     gap: 19px;
   }
-
-.contact-showcase {
-  padding-inline: 85px;
-}
-
-.note-one {
-  right: 15px;
-}
-
-.note-two {
-  left: 15px;
-}
-
-.note-three {
-  right: 45px;
-}
-
   .contact-layout {
     gap: 48px;
   }
@@ -978,62 +948,6 @@ textarea:focus {
 .contact-showcase {
   margin-top: 65px;
   padding: 0;
-}
-
-.hero-card {
-  min-height: 530px;
-  padding: 21px;
-  border-radius: 25px;
-  transform: none;
-}
-
-.hero-card-center {
-  padding: 55px 5px;
-}
-
-.hero-card-center strong {
-  font-size: clamp(2rem, 10vw, 3rem);
-}
-
-.hero-card-center p {
-  font-size: 13px;
-}
-
-.hero-card-bottom {
-  grid-template-columns: 1fr;
-  gap: 15px;
-}
-
-.hero-card-bottom div {
-  padding-bottom: 14px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.hero-card-bottom div:last-child {
-  padding-bottom: 0;
-  border-bottom: 0;
-}
-
-.contact-note {
-  display: none;
-}
-
-.hero-points {
-  margin-top: 50px;
-  grid-template-columns: 1fr;
-  gap: 0;
-}
-
-.hero-points > div {
-  padding: 25px 10px;
-}
-
-.hero-points > div:not(:last-child) {
-  border-bottom: 1px solid var(--line);
-}
-
-.hero-points > div:not(:last-child)::after {
-  display: none;
 }
 
   .contact-info {
