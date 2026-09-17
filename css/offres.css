@@ -402,6 +402,25 @@ button { font: inherit; border: 0; }
 .pricing-note { max-width: 980px; margin: 34px auto 0; padding: 18px 22px; display: flex; gap: 12px; align-items: flex-start; border: 1px solid var(--line); border-radius: 16px; background: #fff; color: var(--muted); }
 .pricing-note i { color: var(--primary); margin-top: 4px; }
 
+.pricing-price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.pricing-price span {
+    display: block;
+}
+
+.pricing-price strong {
+    display: block;
+}
+
+.pricing-price small {
+    display: block;
+    margin-top: 8px;
+}
+
 .serenity-section { padding-top: 0; background: #f8fafc; }
 .serenity-card { --mouse-x:50%; --mouse-y:50%; position: relative; overflow: hidden; max-width: 1280px; margin: 0 auto; padding: 42px; display: flex; align-items: center; justify-content: space-between; gap: 50px; border: 1px solid #dce4ef; border-radius: 30px; background: linear-gradient(135deg, #fff, #eef3ff); box-shadow: var(--shadow-sm); }
 .serenity-copy { display: flex; align-items: flex-start; gap: 24px; max-width: 850px; }
